@@ -3,37 +3,6 @@
 @import url('./reset.css');
 @import url('./root-colors.css');
 
-/* ============= Шрифты ================== */
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif; */
-/* =============== Шрифты ===================== */
 
-:root {
-  --primary-brand: #4d5ae5;
-  /*IRIS* CTAs Focused Active states Links */
-  --pressed-state: #404bbf;
-  /*OCEAN* CTAs */
-  --dark-text-state: #2e2f42;
-  /*NAVY-BLUE* Overlays Shadows Headings */
-  --success: #31d0aa;
-  /*GREEN* Valid fields Success messages */
-  --text: #434455;
-  /*SLATE* Body text */
-  --subtle-Text: #8e8f99;
-  /*LIGHT-SLATE* Helper text Deemphasized text */
-  --accent: #e7e9fc;
-  /*CORNFLOWER* Accent color Hairlines Subtle backgrounds */
-  --light: #f4f4fd;
-  /*CLOUD* Light mode backgrounds Light mode Dialogs/alerts */
-  --Modaloverlay: rgba(46, 47, 66, 0.4);
-  /*NAVY-BLUE-MODAL* Overlay */
-  --Herobackground: rgba(46, 47, 66, 0.7);
-}
 
 @import url('./header.css');
-
-body {
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: 300;
-}
