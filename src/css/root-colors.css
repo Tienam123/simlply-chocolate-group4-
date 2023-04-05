@@ -1,13 +1,4 @@
 
-@import url('./fonts.css');
-@import url('./reset.css');
-@import url('./root-colors.css');
-
-/* ============= Шрифты ================== */
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif; */
-/* =============== Шрифты ===================== */
-
 :root {
   --primary-brand: #4d5ae5;
   /*IRIS* CTAs Focused Active states Links */
@@ -28,12 +19,4 @@ font-family: 'Roboto', sans-serif; */
   --Modaloverlay: rgba(46, 47, 66, 0.4);
   /*NAVY-BLUE-MODAL* Overlay */
   --Herobackground: rgba(46, 47, 66, 0.7);
-}
-
-@import url('./header.css');
-
-body {
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: 300;
 }
