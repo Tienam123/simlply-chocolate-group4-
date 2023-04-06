@@ -5,14 +5,14 @@
 .howtomade-section {
    padding-top: 72px;
    background-color: #e2e2e2;
+   padding-left: 20px;
+   padding-right: 20px;
 }
 .howtomade-container {
    margin-left: auto;
    margin-right: auto;
-   max-width: 375px;
+   max-width: 335px;
    outline: 2px solid tomato;
-   padding-left: 20px;
-   padding-right: 20px;
 }
 .howtomade-title {
    font-family: 'Montserrat';
@@ -29,19 +29,11 @@
 .howtomade-title-span {
    color: #fd9222;
 }
-/* .howtomade-icon {
-   display: inline-block;
-   width: 1em;
-   height: 1em;
-   stroke-width: 0;
-   stroke: #fff;
-   fill: #fff;
-} */
-
 .howtomade-wrapper {
    display: flex;
    flex-wrap: wrap;
    gap: 20px;
+   position: relative;
 }
 .howtomade-img {
    background-color: linear-gradient(
@@ -51,6 +43,23 @@
       ),
       url(pastry-chef-preparing-chocolate-cake.jpg);
    border-radius: 15px;
+}
+.howtomade-icon-wrap {
+   position: absolute;
+   top: 232px;
+   left: 150px;
+   width: 35px;
+   height: 35px;
+   stroke: #fff;
+   fill: tomato;
+   z-index: 3px;
+}
+.howtomade-icon  {
+
+   width: 35px;
+   height: 35px;
+   stroke: #fff;
+   fill: tomato;
 }
 .howtomade-desc-wrap {
    padding: 20px 14px;
@@ -86,7 +95,6 @@
    background: #4c4c4c;
    border: 1px solid #eceded;
    border-radius: 50%;
-   margin-right: 8px;
 }
 .howtomade-item-text {
    font-family: 'Montserrat';
@@ -113,26 +121,51 @@
       max-width: 350px;
       margin-bottom: 20px;
    }
+   .howtomade-list {
+      padding-right: 70px;
+   }
+   .howtomade-img {
+      width: 614px;
+   }
+   .howtomade-icon-wrap {
+      top: 178px;
+      left: 285px;
+      width: 44px;
+      height: 44px;
+   }
+   .howtomade-icon  {
+      width: 44px;
+      height: 44px;
+   }
 }
 /* !##################### < 1200px ########################### */
 @media screen and (min-width: 1200px) {
    .howtomade-section {
       padding-top: 128px;
       background-color: #e2e2e2;
-   }
-   .howtomade-container {
-      max-width: 1200px;
       padding-left: 32px;
       padding-right: 32px;
    }
-   .howtomade-list {
-      row-gap: 24px;
+   .howtomade-container {
+      max-width: 1136px;
    }
    .howtomade-wrapper {
       flex-wrap: nowrap;
    }
-      .howtomade-desc-wrap {
-      max-width: 512px;
+   .howtomade-icon-wrap {
+      left: 278px;
    }
-
+   .howtomade-list {
+      row-gap: 24px;
+   }
+      .howtomade-list {
+      padding-right: 0;
+      max-width: 452px;
+   }
+   .howtomade-img-wrap{
+      width: 125.27%;
+   }
+   .howtomade-img {
+      width: 600px;
+   }
 }
