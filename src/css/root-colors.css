@@ -4,4 +4,15 @@
   
   /*NAVY-BLUE-MODAL* Overlay */
   --Herobackground: rgba(46, 47, 66, 0.7);
+<<<<<<< Updated upstream
+=======
+  --Main-white: #ffffff;
+  --Adventage-Section: #1e1823;
+  --Adventage-p-color: rgba(255, 255, 255, 0.7);
+
+  --FooterMainText: #ffffff;
+  --FooterSecondText: #fd9222;
+  --FooterBackground: #1E1823;
+  --FooterBefore: rgba(255, 255, 255, 0.1);
+>>>>>>> Stashed changes
 }
