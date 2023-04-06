@@ -7,7 +7,6 @@
 .nav {
    display: flex;
    align-items: center;
-   justify-content: space-between;
   
    
 }
@@ -64,6 +63,24 @@ letter-spacing: -0.03em;
 .nav-link-line {
 }
 
+.social-menu {
+}
+.social-item {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.social-link {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.social-link svg {
+   fill:#fff;
+   stroke: #111111;
+}
+
 @media screen and (max-width: 767px) {
    .header {
       padding-top: 20px;
@@ -81,10 +98,20 @@ letter-spacing: -0.03em;
    .header {
       padding-top: 24px;
       padding-bottom: 32px;
-
-      
+   }
+   .menu-container {
+      flex:1 1;
    }
    .menu-toggle {
       display: none;
    }
+   .nav-menu {
+      justify-content: flex-end;
+   }
+   .social-menu {
+      display: flex;
+      column-gap: 18px;
+      margin-left: 137px;
+   }
 }
+
