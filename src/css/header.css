@@ -93,6 +93,12 @@ letter-spacing: -0.03em;
       padding: 24px 0;
    }
 }
+@media screen and (max-width: 1199px) {
+   .menu-container {
+      display: none;
+   }
+}
+
 
 @media screen and (min-width: 1200px) {
    .header {
