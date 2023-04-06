@@ -50,7 +50,7 @@ ul {
 
 @media screen and (min-width: 375px) {
    .container-benefits {
-      min-width: 335px;
+
    }
 
    .benefits-list {
@@ -81,7 +81,6 @@ ul {
 
 @media screen and (min-width: 768px) {
    .container-benefits {
-      min-width: 704px;
       gap: 32px;
 
       display: flex;
@@ -109,9 +108,6 @@ ul {
 }
 
 @media screen and (min-width: 1200px) {
-   .container-benefits {
-      min-width: 1100px;
-   }
 
    .benefits-item {
       flex-basis: calc((100% - 70px) / 3);
