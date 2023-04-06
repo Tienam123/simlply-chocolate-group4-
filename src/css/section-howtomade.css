@@ -1,75 +1,138 @@
+/*!##################### 375px-767px ########################### */
+@media screen and (min-width: 375px) {
+}
 /* ? ======= HOWTOMADE SECTION ====== */
 .howtomade-section {
- padding-top: 128px;
+   padding-top: 72px;
+   background-color: #e2e2e2;
 }
 .howtomade-container {
- margin-left: auto;
- margin-right: auto;
- max-width: 1200px;
- outline: 2px solid tomato;
- padding-left: 32px;
- padding-right: 32px;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 375px;
+   outline: 2px solid tomato;
+   padding-left: 20px;
+   padding-right: 20px;
 }
 .howtomade-title {
- font-family: 'Montserrat';
- font-style: normal;
- font-weight: 600;
- font-size: 24px;
- line-height: 1.17;
- text-align: center;
- letter-spacing: -0.03em;
- text-transform: uppercase;
- color: #111111;
- margin-bottom: 50px;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 1.17;
+   text-align: center;
+   letter-spacing: -0.03em;
+   text-transform: uppercase;
+   color: #111111;
+   margin-bottom: 50px;
 }
 .howtomade-title-span {
- color: #FD9222;
-
+   color: #fd9222;
 }
+/* .howtomade-icon {
+   display: inline-block;
+   width: 1em;
+   height: 1em;
+   stroke-width: 0;
+   stroke: #fff;
+   fill: #fff;
+} */
+
 .howtomade-wrapper {
- display: flex;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
 }
 .howtomade-img {
+   background-color: linear-gradient(
+         0deg,
+         rgba(0, 0, 0, 0.4),
+         rgba(0, 0, 0, 0.4)
+      ),
+      url(pastry-chef-preparing-chocolate-cake.jpg);
+   border-radius: 15px;
 }
 .howtomade-desc-wrap {
- padding: 32px;
+   padding: 20px 14px;
+   background-color: #ffffff;
+   border-radius: 15px;
+   width: 100%;
 }
 .howtomade-subtitle {
- width: 350px;
- font-family: 'Montserrat';
- font-style: normal;
- font-weight: 600;
- font-size: 18px;
- line-height: 1.33;
- color: #111111;
- margin-bottom: 28px;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 1.33;
+   color: #111111;
+   margin-bottom: 28px;
 }
-
 .howtomade-list {
- display: flex;
- flex-direction: column;
- row-gap: 24px;
+   display: flex;
+   flex-direction: column;
+   row-gap: 18px;
 }
 .howtomade-item {
- display: flex;
- 
+   display: flex;
+   position: relative;
+   padding-left: 16px;
 }
 .howtomade-item-ellipse {
- width: 8px;
- height: 8px;
- left: 0px;
- top: 4px;
- background: #4C4C4C;
- border: 1px solid #ECEDED;
- border-radius: 50%;
- margin-right: 8px;
+   position: absolute;
+   width: 8px;
+   height: 8px;
+   left: 0px;
+   top: 4px;
+   background: #4c4c4c;
+   border: 1px solid #eceded;
+   border-radius: 50%;
+   margin-right: 8px;
 }
 .howtomade-item-text {
- font-family: 'Montserrat';
- font-style: normal;
- font-weight: 400;
- font-size: 14px;
- line-height: 1.29;
- letter-spacing: -0.02em;
- color: #111111;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-size: 14px;
+   line-height: 1.29;
+   letter-spacing: -0.02em;
+   color: #111111;
+}
+
+/* !##################### 768px-1199px ########################### */
+@media screen and (min-width: 768px) {
+   .howtomade-section {
+      padding-top: 100px;
+      background-color: #e2e2e2;
+   }
+   .howtomade-container {
+      max-width: 614px;
+   }
+   .howtomade-desc-wrap {
+      padding: 32px;
+   }
+   .howtomade-subtitle {
+      max-width: 350px;
+      margin-bottom: 20px;
+   }
+}
+/* !##################### < 1200px ########################### */
+@media screen and (min-width: 1200px) {
+   .howtomade-section {
+      padding-top: 128px;
+      background-color: #e2e2e2;
+   }
+   .howtomade-container {
+      max-width: 1200px;
+      padding-left: 32px;
+      padding-right: 32px;
+   }
+   .howtomade-list {
+      row-gap: 24px;
+   }
+   .howtomade-wrapper {
+      flex-wrap: nowrap;
+   }
+      .howtomade-desc-wrap {
+      max-width: 512px;
+   }
+
 }
