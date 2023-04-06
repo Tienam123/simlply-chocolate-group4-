@@ -1,7 +1,9 @@
 
 
 :root {
-  
+  --dark: #111111;
+  --dark-violet: #1E1823;
+  --Orange:  #FD9222;
   /*NAVY-BLUE-MODAL* Overlay */
   --Herobackground: rgba(46, 47, 66, 0.7);
 }
