@@ -1,0 +1,51 @@
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+body {
+font-family: 'Montserrat';
+font-size: 14px;
+line-height: 1.28;
+letter-spacing: -0.02em;
+color: var(--dark);
+}
+
+@media screen and (max-width:374px) {
+  .container {
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 365px;
+    
+  }  
+}
+@media screen and (min-width:375px) and (max-width:767px) {
+  .container {
+    max-width: 365px;
+    
+  }  
+}
+
+@media screen and (min-width:768px) {
+  .container {
+    max-width:734px;
+  }  
+}
+
+@media screen and (min-width:1200px) {
+  .container {
+    padding: 0 15px;
+    margin: 0 auto;
+    width:1166px;
+  }  
+}
+
+
+
+
+
+
+
+
+
