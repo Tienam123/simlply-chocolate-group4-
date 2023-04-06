@@ -33,6 +33,8 @@
    display: flex;
    flex-wrap: wrap;
    gap: 20px;
+}
+.howtomade-img-wrap{
    position: relative;
 }
 .howtomade-img {
@@ -44,22 +46,35 @@
       url(pastry-chef-preparing-chocolate-cake.jpg);
    border-radius: 15px;
 }
+.howtomade-icon-link,
 .howtomade-icon-wrap {
    position: absolute;
-   top: 232px;
-   left: 150px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
    width: 35px;
    height: 35px;
    stroke: #fff;
    fill: tomato;
-   z-index: 3px;
+   z-index: 10;
+}
+.howtomade-video {
+   position: absolute;
+   top: 0;
+   left: 0;
+   border-radius: 15px;
+   width: 100%;
+   max-width: 335px;
+   height: 100%;
 }
 .howtomade-icon  {
-
    width: 35px;
    height: 35px;
    stroke: #fff;
    fill: tomato;
+}
+.howtomade-icon-link:is(:focus, :hover) {
+   cursor: pointer;
 }
 .howtomade-desc-wrap {
    padding: 20px 14px;
@@ -114,6 +129,9 @@
    .howtomade-container {
       max-width: 614px;
    }
+   .howtomade-video {
+      max-width: 614px;
+   }
    .howtomade-desc-wrap {
       padding: 32px;
    }
@@ -128,8 +146,6 @@
       width: 614px;
    }
    .howtomade-icon-wrap {
-      top: 178px;
-      left: 285px;
       width: 44px;
       height: 44px;
    }
@@ -152,9 +168,6 @@
    .howtomade-wrapper {
       flex-wrap: nowrap;
    }
-   .howtomade-icon-wrap {
-      left: 278px;
-   }
    .howtomade-list {
       row-gap: 24px;
    }
@@ -167,5 +180,8 @@
    }
    .howtomade-img {
       width: 600px;
+   }
+      .howtomade-video {
+      max-width: 600px;
    }
 }
