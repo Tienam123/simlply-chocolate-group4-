@@ -1,0 +1,13 @@
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width:1166px;
+}
+
+body {
+font-family: 'Montserrat';
+font-size: 14px;
+line-height: 1.28;
+letter-spacing: -0.02em;
+color: var(--dark);
+}

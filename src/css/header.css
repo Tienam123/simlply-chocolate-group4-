@@ -1,23 +1,43 @@
-.icon-close {
-stroke:black;
+.header {
+   
 }
 
-.container {
-   padding: 0 15px;
-   margin: 0 auto;
-   max-width:1166px;
-}
+
+
 .nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+  
+   
 }
 .logo {
+   display: flex;
+   column-gap: 8px;
+   align-items: center;
+   
+/* identical to box height, or 111% */
+
+}
+.logo-text {
+   font-family: 'Montserrat';
+   font-style: italic;
+font-weight: 700;
+font-size: 18px;
+line-height: 1.11;
+letter-spacing: -0.03em;
 }
 .logo-item {
 }
+
 .menu-toggle {
+   background-color: transparent;
+   border: none;
 }
 .js-open-menu {
 }
 .menu-button-icon {
+   stroke: black;
 }
 .icon-burger {
 }
@@ -28,14 +48,43 @@ stroke:black;
 .js-close-menu {
 }
 .menu-button-close {
+   stroke: black;
 }
 .icon-close {
 }
 .nav-menu {
+   display: flex;
+   column-gap: 24px;
+   font-weight: 500;
 }
 .nav-menu-item {
 }
 .nav-menu-link {
 }
 .nav-link-line {
+}
+
+@media screen and (max-width: 767px) {
+   .header {
+      padding-top: 20px;
+      padding-bottom: 14px;
+   }
+}
+
+@media screen and (min-width: 768px) {
+   .header {
+      padding: 24px 0;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   .header {
+      padding-top: 24px;
+      padding-bottom: 32px;
+
+      
+   }
+   .menu-toggle {
+      display: none;
+   }
 }
