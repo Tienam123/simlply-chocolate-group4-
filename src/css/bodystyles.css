@@ -1,6 +1,7 @@
 .container {
   padding: 0 15px;
   margin: 0 auto;
+  width: 100%;
 }
 
 body {
@@ -15,24 +16,20 @@ color: var(--dark);
   .container {
     padding: 0 15px;
     margin: 0 auto;
-    max-width: 375px;
+    max-width: 365px;
     
   }  
 }
 @media screen and (min-width:375px) and (max-width:767px) {
   .container {
-    padding: 0 15px;
-    margin: 0 auto;
-    width: 375px;
+    max-width: 365px;
     
   }  
 }
 
 @media screen and (min-width:768px) {
   .container {
-    padding: 0 15px;
-    margin: 0 auto;
-    width:768px;
+    max-width:734px;
   }  
 }
 
