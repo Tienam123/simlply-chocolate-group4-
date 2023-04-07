@@ -4,10 +4,14 @@
     }
 }
 
-.components {
+.components {  
+}
+/* 
+.container {
+
 padding-top: 72px;
 padding-bottom: 36px;
-}
+} */
 
 .component-title {
     font-family: 'Montserrat';
@@ -201,12 +205,7 @@ color: var(--Orange);
 }
 
 @media screen and (min-width:768px) {
-    .container {
-        max-width: 734px;} 
-    .components {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
+
     .component-title {
         margin-bottom: 28px;
     }
@@ -225,12 +224,7 @@ color: var(--Orange);
 }
 
 @media screen and (min-width:1200px) {
-    .container {
-        max-width: 1166px;}
-    .components {
-        padding-top: 128px;
-        padding-bottom: 128px;
-    }
+
 
     .overlay {
         padding: 18px;
