@@ -4,10 +4,7 @@
     }
 }
 
-.components {  
-}
-
-.container {
+.components {
 padding-top: 72px;
 padding-bottom: 36px;
 }
@@ -63,7 +60,6 @@ color: var(--Orange);
 }
 
 .component-cards-interactive {}
-.link {}
 
 .component-cards-img {
     width: 336px;
@@ -127,6 +123,7 @@ color: var(--Orange);
 }
 
 .component-cards-animation {
+   
     position: absolute;
     background-color: var(--Main-white);
     overflow: hidden;
@@ -205,7 +202,8 @@ color: var(--Orange);
 
 @media screen and (min-width:768px) {
     .container {
-        max-width: 734px;
+        max-width: 734px;} 
+    .components {
         padding-top: 100px;
         padding-bottom: 100px;
     }
@@ -226,13 +224,16 @@ color: var(--Orange);
 
 @media screen and (min-width:1200px) {
     .container {
-        max-width: 1166px;
+        max-width: 1166px;}
+    .components {
         padding-top: 128px;
         padding-bottom: 128px;
     }
 
-    .component-list {
-        
+    .overlay {
+        padding: 18px;
+        overflow-y: auto;
+
     }
 
 
