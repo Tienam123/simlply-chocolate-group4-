@@ -1,0 +1,139 @@
+<!--MODAL-->
+<div class="backdrop is-hidden">
+   <div class="modal-hero">
+      <button type="button" class="modal-hero-close">
+         <svg class="modal-close-icon" width="24" height="24">
+            <use href="../img/icons/close.svg"></use>
+         </svg>
+      </button>
+      <p class="modal-hero-title"><span>bUY</span> nOW</p>
+          <ul class="modal-hero-list">
+            <li class="modal-hero-item">
+               <picture>
+                  <source
+                     srcset="
+                        ../img/modal-hero/modal-hero-dark-chocolate.png 1x,
+                        ../img/modal-hero/modal-hero-dark-chocolate@2x.png 2x
+                     "
+                     media="(min-width: 768px)"
+                  />
+                  <source
+                     srcset="
+                        ../img/modal-hero/mobile-modal-hero-dark-chocolate.png 1x,
+                        ../img/modal-hero/mobile-modal-hero-dark-chocolate@2x.png 2x
+                     "
+                     media="(min-width: 320px)"
+                  />
+                  <img
+                     class="projects-overlay-wrapper-img"
+                     src="../img/modal-hero/modal-hero-dark-chocolate.png"
+                     alt="Chocolate card"
+                  />
+               </picture>
+               <button type="button" class="modal-hero-price">100 g</button>
+            </li>
+            <li class="modal-hero-item">
+               <picture>
+                  <source
+                     srcset="
+                         ../img/modal-hero/modal-hero-praline.png 1x,
+                        ../img/modal-hero/modal-hero-praline@2x.png 2x
+                     "
+                     media="(min-width: 768px)"
+                  />
+                  <source
+                     srcset="
+                        ../img/modal-hero/mobile-modal-hero-praline.png 1x,
+                        ../img/modal-hero/mobile-modal-hero-praline@2x.png 2x
+                     "
+                     media="(min-width: 320px)"
+                  />
+                  <img
+                     class="projects-overlay-wrapper-img"
+                     src=" ../img/modal-hero/modal-hero-praline.png"
+                     alt="Chocolate card"
+                  />
+               </picture>
+                <button type="button" class="modal-hero-price">200 g</button>
+            </li>
+            <li class="modal-hero-item">
+               <picture>
+                  <source
+                     srcset="
+                        ../img/modal-hero/modal-hero-chocolate.png 1x,
+                        ../img/modal-hero/modal-hero-chocolate@2x.png 2x
+                     "
+                     media="(min-width: 768px)"
+                  />
+                  <source
+                     srcset="
+                        ../img/modal-hero/mobile-modal-hero-chocolate.png 1x,
+                        ../img/modal-hero/mobile-modal-hero-chocolate@2x.png 2x
+                     "
+                     media="(min-width: 320px)"
+                  />
+                  <img
+                     class="projects-overlay-wrapper-img"
+                     src="../img/modal-hero/modal-hero-chocolate.png"
+                     alt="Chocolate card"
+                  />
+               </picture>
+                <button type="button" class="modal-hero-price">300 g</button>
+            </li>
+         </ul>
+      </div>
+       <form class="modal-hero-form">
+         <p class="modal-hero-info">Personal information</p>
+         <div class="hero-imput-name-wrapper">
+            <input
+               class="modal-hero-form-imput"
+               type="text"
+               name="user_name"
+               required
+               pattern="[a-zA-Z]+$"
+               placeholder="Name"
+            />
+            <input
+               class="modal-hero-form-imput"
+               type="text"
+               name="user_surname"
+               required
+               pattern="[a-zA-Z]+$"
+               placeholder="Surname"
+            />
+         </div>
+
+         <p class="modal-hero-info">Email</p>
+         <input
+            class="modal-hero-form-imput"
+            name="user_email"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            placeholder="Enter your email"
+         />
+         <p class="modal-help-info">Phone number</p>
+         <input
+            class="modal-hero-form-imput"
+            type="tel"
+            name="user_number"
+            required
+            placeholder="Phone number"
+         />
+         <p class="modal-help-info">Card number</p>
+         <input
+            class="modal-hero-form-imput"
+            type="number"
+            name="user_card"
+            required
+            placeholder="Enter card"
+         />
+         <p class="modal-help-info">Comment</p>
+         <textarea
+            class="modal-hero-form-textarea"
+            name="user_message"
+            placeholder="Enter text"
+         ></textarea>
+         <button type="submit" class="btn-hero-modal">Submit</button>
+      </form>
+   </div>
+</div>
