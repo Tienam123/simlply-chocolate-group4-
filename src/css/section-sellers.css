@@ -5,11 +5,11 @@
 .sellers-container {
    margin-left: auto;
    margin-right: auto;
-   max-width: 365px;
+   /* max-width: 365px; */
    padding-left: 20px;
    padding-right: 20px;
 }
-.sellers-title {   
+.sellers-title {
    font-weight: 600;
    font-size: 20px;
    line-height: 1.2;
@@ -20,7 +20,7 @@
    margin-bottom: 32px;
 }
 .sellers-title-text {
-   color:var(--Orange);
+   color: var(--Orange);
 }
 .sellers-img {
    width: 335px;
@@ -32,15 +32,15 @@
    flex-direction: column;
 }
 
-.sellers-description {  
+.sellers-description {
    font-size: 14px;
    line-height: 1.29;
    letter-spacing: -0.02em;
-   color:var(--dark);
+   color: var(--dark);
 }
 .sellers-btn {
    display: block;
-   padding: 12px 28px;   
+   padding: 12px 28px;
    font-weight: 600;
    font-size: 14px;
    line-height: 1.21;
@@ -57,6 +57,12 @@
 .sellers-list-item.five {
    margin-left: auto;
    margin-right: auto;
+}
+.sellers-img {
+   transform: scale(1);
+}
+.sellers-img:is(:focus, :hover) {
+   transform: scale(1.05);
 }
 
 @media screen and (max-width: 767px) {
@@ -84,13 +90,13 @@
 }
 
 @media screen and (min-width: 768px) {
-   .sellers {
+   .sellers-section {
       padding-top: 100px;
    }
    .sellers-container {
-      max-width: 768px;
-      padding-left: 32px;
-      padding-right: 32px;
+      /* max-width: 768px; */
+      padding-left: 15px;
+      padding-right: 15px;
    }
    .sellers-title {
       font-size: 24px;
@@ -137,7 +143,7 @@
 
 /* =============================== MODAL WINDOW REVIEVS ================================= */
 
-.backdrop {   
+.backdrop {
    position: fixed;
    top: 0;
    left: 0;
@@ -149,6 +155,7 @@
   visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
    opacity: 1;
    visibility: visible;
+   backdrop-filter: blur(3px);
 }
 .backdrop.is-hidden {
    opacity: 0;
@@ -159,11 +166,11 @@ html.is-active {
    overflow: hidden;
 }
 
-.modal-revievs {
+.modal-reviews {
    min-width: 311px;
    min-height: 471px;
    position: absolute;
-   top: 20px;
+   top: 20%;
    left: 50%;
    transform: translate(-50%, 0%) scale(1);
    background-color: #fafafa;
@@ -171,10 +178,10 @@ html.is-active {
 
    border-radius: 15px;
 }
-.backdrop.is-hidden .modal-revievs {
+.backdrop.is-hidden .modal-reviews {
    transform: translate(-50%, -50%) scale(1.2);
 }
-.revievs-close-btn {
+.reviews-close-btn {
    width: 28px;
    height: 28px;
    position: absolute;
@@ -186,49 +193,53 @@ html.is-active {
    background-color: transparent;
    border: transparent;
    fill: var(--Main-white);
-   stroke:var(--dark);
+   stroke: var(--dark);
    padding: 6px;
 }
-.revievs-title {
-   
+.reviews-close-btn:is(:hover, :focus) {
+   fill: var(--Main-white);
+   stroke: var(--Orange);
+   outline: transparent;
+}
+.reviews-title {
    font-weight: 600;
    font-size: 20px;
    line-height: 1.2;
    letter-spacing: -0.03em;
    text-transform: uppercase;
-   color:var(--dark);
+   color: var(--dark);
    margin-bottom: 32px;
 }
-.revievs-title-text {
-   color:var(--Orange);
+.reviews-title-text {
+   color: var(--Orange);
 }
-.revievs-modal-field {
+.reviews-modal-field {
    margin-bottom: 19px;
 }
-.revievs-modal-field.phone {
+.reviews-modal-field.phone {
    position: relative;
 }
-.revievs-form-input {
+.reviews-form-input {
    width: 100%;
    height: 45px;
    padding: 10px 18px;
    border: 1.5px solid rgba(17, 17, 17, 0.05);
-   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+
    border-radius: 13px;
    background-color: transparent;
 }
-.revievs-form-input:is(:hover, :focus){
+.reviews-form-input:is(:hover, :focus) {
    border: 2px solid var(--Orange);
    outline: transparent;
 }
 
-.revievs-code {
+.reviews-code {
    padding: 4px 8px;
 }
-.revievs-form-input.phone {
+.reviews-form-input.phone {
    padding-left: 106px;
 }
-.revievs-phone-code {
+.reviews-phone-code {
    display: flex;
    align-items: center;
    position: absolute;
@@ -236,7 +247,7 @@ html.is-active {
    left: 18px;
    transform: translateY(-50%);
 }
-.revievs-code {  
+.reviews-code {
    font-weight: 500;
    font-size: 14px;
    line-height: 1.21;
@@ -246,56 +257,48 @@ html.is-active {
 
    color: #000000;
 }
-.revievs-form-input-message {
-   width: 100%;
+.reviews-form-input-message {
    height: 91px;
-   border: 1.5px solid rgba(17, 17, 17, 0.05);
-   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
-   border-radius: 13px;
-   background-color: transparent;
    resize: none;
 }
-.revievs-slash {
+.reviews-slash {
    color: rgba(64, 64, 64, 0.3);
 }
 
-.revievs-send-btn {
+.reviews-send-btn {
    padding: 12px 28px;
    background-color: var(--Orange);
    border-radius: 100px;
    border: transparent;
-  
+
    font-weight: 600;
    font-size: 14px;
    line-height: 1.21;
    color: #ffffff;
 }
-.revievs-send-btn:is(:hover, :focus) {
+.reviews-send-btn:is(:hover, :focus) {
    background-color: #fcf1e0;
    color: var(--Orange);
    outline: transparent;
 }
-.modal-form-input::placeholder {
-   font-family: 'Montserrat';
+.reviews-form-input::placeholder {
    font-size: 14px;
    line-height: 1.21;
    letter-spacing: -0.02em;
-
    color: rgba(64, 64, 64, 0.3);
 }
 
-
 @media screen and (min-width: 768px) {
-   .modal-revievs {
+   .modal-reviews {
       min-width: 517px;
       min-height: 631px;
       padding: 40px 40px;
    }
-   .revievs-close-btn {
+   .reviews-close-btn {
       width: 32px;
       height: 32px;
    }
-   .revievs-title {
+   .reviews-title {
       display: grid;
       font-size: 24px;
       line-height: 1.17;
@@ -305,26 +308,103 @@ html.is-active {
       width: 14px;
       height: 14px;
    } */
-   .revievs-form-input {
+   .reviews-form-input {
       height: 66px;
       padding: 24px 22px;
    }
-   .revievs-form-input-message {
+   .reviews-form-input-message {
       height: 137px;
    }
-   .revievs-code {
+   .reviews-code {
       padding: 5px 18px;
    }
-   .modal-form-input::placeholder {      
+   .reviews-code,
+   .reviews-slash {
       font-size: 18px;
       line-height: 1.22;
    }
-   .revievs-form-input.phone   {
+   .reviews-form-input::placeholder {
+      font-size: 18px;
+      line-height: 1.22;
+   }
+   .reviews-form-input.phone {
       padding-left: 140px;
    }
 }
-@media screen and (min-width: 1200px){
-   .modal-revievs{
+@media screen and (min-width: 1200px) {
+   .modal-reviews {
       padding: 45px 40px 40px;
    }
+}
+
+/* ===================================== NEW MODAL ==================================== */
+.backdrop-two {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(46, 47, 66, 0.4);
+   overflow: scroll;
+   /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+   opacity: 1;
+   visibility: visible;
+   backdrop-filter: blur(3px);
+}
+.backdrop-two.is-hidden {
+   opacity: 0;
+   visibility: hidden;
+   pointer-events: none;
+}
+
+.reviews-modal-two {
+   min-width: 311px;
+   /* min-height: 471px; */
+   position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translate(-50%, 0%) scale(1);
+   /* background-color: #fafafa; */
+   padding: 32px 24px;
+
+   border-radius: 15px;
+   display: flex;
+   flex-direction: column;
+   /* background-color: rgba(23, 26, 36, 0.2); */
+}
+
+.reviews-close-btn-two {
+   width: 28px;
+   height: 28px;
+   position: absolute;
+   top: 14px;
+   right: 14px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: transparent;
+   border: transparent;
+   fill: var(--Main-white);
+   stroke: var(--Main-white);
+   padding: 6px;
+}
+
+.reviews-two-description {
+   color: var(--Orange);
+   font-size: 40px;
+   line-height: 1.2;
+   text-align: center;
+   text-transform: uppercase;
+   margin-bottom: 60px;
+   text-shadow:4px 4px 10px #000000;
+}
+.reviews-send-link {
+   font-size: 25px;
+}
+.reviews-send-link {
+   display: flex;
+   justify-content: center;
+   font-weight: 700;
+   font-size: 25px;
 }
