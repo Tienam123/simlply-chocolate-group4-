@@ -208,7 +208,7 @@
       height: 2px;
       left: 0;
    bottom:0;
-   transform: translateX(-100%);
+   transform: translateX(-102%);
    transition: all 500ms linear;
     }
     .nav-menu-link:hover::after {
