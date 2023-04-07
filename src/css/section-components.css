@@ -6,11 +6,11 @@
 
 .components {  
 }
-
+/* 
 .container {
 padding-top: 72px;
 padding-bottom: 36px;
-}
+} */
 
 .component-title {
     font-family: 'Montserrat';
@@ -204,11 +204,11 @@ color: var(--Orange);
 }
 
 @media screen and (min-width:768px) {
-    .container {
+    /* .container {
         max-width: 734px;
         padding-top: 100px;
         padding-bottom: 100px;
-    }
+    } */
     .component-title {
         margin-bottom: 28px;
     }
@@ -225,11 +225,11 @@ color: var(--Orange);
 }
 
 @media screen and (min-width:1200px) {
-    .container {
+    /* .container {
         max-width: 1166px;
         padding-top: 128px;
         padding-bottom: 128px;
-    }
+    /* } */
 
     .component-list {
         
