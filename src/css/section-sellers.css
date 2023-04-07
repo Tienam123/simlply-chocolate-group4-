@@ -155,6 +155,9 @@
    visibility: hidden;
    pointer-events: none;
 }
+html.is-active {
+   overflow: hidden;
+}
 
 .modal-revievs {
    min-width: 311px;
