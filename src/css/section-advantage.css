@@ -46,12 +46,11 @@ ul {
 
 .svg-adventages {
    margin: 15px;
-  
 }
 
 @media screen and (min-width: 375px) {
    .container-benefits {
-      min-width: 335px;
+
    }
 
    .benefits-list {
@@ -82,7 +81,6 @@ ul {
 
 @media screen and (min-width: 768px) {
    .container-benefits {
-      min-width: 704px;
       gap: 32px;
 
       display: flex;
@@ -110,12 +108,9 @@ ul {
 }
 
 @media screen and (min-width: 1200px) {
-   .container-benefits {
-      min-width: 1100px;
-   }
 
    .benefits-item {
-     flex-basis: calc((100% - 70px) / 3);
+      flex-basis: calc((100% - 70px) / 3);
       justify-content: center;
       align-items: flex-start;
       gap: 70px;
@@ -127,7 +122,22 @@ ul {
 
    .benefits-title {
       display: flex;
-    justify-content: flex-start;
+      justify-content: flex-start;
    }
 
+   .benefits-list {
+      position: relative;
+   }
+   .item-line::before {
+      content: ' ';
+      display: block;
+      width: 124px;
+      height: 1px;
+      position: absolute;
+      top: 70%;
+      
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      transform: rotate(90deg) translateY(85px);
+     
+   }
 }
