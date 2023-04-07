@@ -48,6 +48,12 @@ ul {
    margin: 15px;
 }
 
+.svg-wrap {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
 @media screen and (min-width: 375px) {
    .container-benefits {
       min-width: 335px;
@@ -141,9 +147,9 @@ ul {
       content: ' ';
       display: block;
       width: 124px;
-      height: 1px;
+      height: 0px;
       position: absolute;
-      top: 70%;
+      top: 55%;
       
       border: 1px solid rgba(255, 255, 255, 0.5);
       transform: rotate(90deg) translateY(85px);
