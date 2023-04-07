@@ -108,6 +108,7 @@ letter-spacing: -0.03em;
    background-color: #1E1823;
    width: 58%;
    height: 100vh;
+   z-index: 1000;
  }
  .menu-container.js-menu-container {
    display: none;
