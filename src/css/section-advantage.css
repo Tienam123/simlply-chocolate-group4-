@@ -1,0 +1,152 @@
+.visually-hidden {
+   position: absolute;
+   top: -150%;
+   z-index: -100;
+   width: 0;
+   height: 0;
+   opacity: 0;
+   visibility: hidden;
+   user-select: none;
+   pointer-events: none;
+   cursor: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   border: none;
+   outline: none;
+   white-space: nowrap;
+}
+
+.container-benefits {
+   background-color: #1e1823;
+}
+
+ul {
+   list-style: none;
+}
+
+.benefits-title {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 1.2;
+   color: white;
+}
+.advent-p {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.2;
+   letter-spacing: -0.02em;
+
+   color: rgba(255, 255, 255, 0.7);
+}
+
+.svg-adventages {
+   margin: 15px;
+}
+
+.svg-wrap {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+h3 {
+   margin-bottom: 18px;
+}
+
+@media screen and (min-width: 375px) {
+   .container-benefits {
+
+   }
+
+   .benefits-list {
+      display: block;
+   }
+
+   .benefits-item {
+     
+   }
+
+   .benefits-title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+   }
+   .svg-wrap {
+      width: 62px;
+      height: 62px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 365px;
+      margin: 20px 0;
+   }
+
+   .benefits-list li:not(:first-child) {
+      margin-top: 20px;
+   }
+}
+
+@media screen and (min-width: 768px) {
+   .container-benefits {
+      gap: 32px;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+   }
+
+   ul.benefits-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 32px;
+   }
+
+   .benefits-list li:not(:first-child) {
+      margin-top: 0;
+   }
+
+   .benefits-item {
+      flex-basis: calc((100% - 32px) / 2);
+   }
+}
+
+@media screen and (min-width: 1200px) {
+
+   .benefits-item {
+      flex-basis: calc((100% - 70px) / 3);
+      justify-content: center;
+      align-items: flex-start;
+      gap: 70px;
+   }
+
+   .benefits-list li:not(:first-child) {
+      margin-top: 0;
+   }
+
+   .benefits-title {
+      display: flex;
+      justify-content: flex-start;
+   }
+
+   .benefits-list {
+      position: relative;
+   }
+   .item-line::before {
+      content: ' ';
+      display: block;
+      width: 124px;
+      height: 0px;
+      position: absolute;
+      top: 55%;
+      
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      transform: rotate(90deg) translateY(85px);
+     
+   }
+}
