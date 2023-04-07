@@ -16,8 +16,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
    />
    
-  <script type="module" crossorigin src="/simlply-chocolate-group4-/assets/index-ff84c91d.js"></script>
-  <link rel="stylesheet" href="/simlply-chocolate-group4-/assets/index-470deb67.css">
+  <script type="module" crossorigin src="/simlply-chocolate-group4-/assets/index-c5e3e864.js"></script>
+  <link rel="stylesheet" href="/simlply-chocolate-group4-/assets/index-d06ee298.css">
 </head>
 <body></body>
 
@@ -57,21 +57,21 @@
          </button>
          <ul class="nav-menu">
             <li class="nav-menu-item">
-               <a href="#" class="nav-menu-link"
+               <a href="#home" class="menu-toggle nav-menu-link"
                   ><span class="nav-link-line"></span>Home</a
                >
             </li>
             <li class="nav-menu-item">
-               <a href="#" class="nav-menu-link">How it’s made?</a>
+               <a href="#howtomade" class="nav-menu-link">How it’s made?</a>
             </li>
             <li class="nav-menu-item">
-               <a href=".#" class="nav-menu-link">Our products</a>
+               <a href="#products" class="nav-menu-link">Our products</a>
             </li>
             <li class="nav-menu-item">
-               <a href=".#" class="nav-menu-link">Top sellers</a>
+               <a href="#review" class="nav-menu-link">Top sellers</a>
             </li>
             <li class="nav-menu-item">
-               <a href="#" class="nav-menu-link">Chocolate is loved</a>
+               <a href="#sellers" class="nav-menu-link">Chocolate is loved</a>
             </li>
          </ul>
 
@@ -119,7 +119,7 @@
       <main class="page">
          <!-- =============== Hero Section ================ -->
          <!-- Юлик -->
-         <section class="hero">
+         <section class="hero" id="home">
   <div class="container hero-container">
     <h1 class="hero-hidden-title">Chocolate</h1>
     <h2 class="hero-subtitle">Treat yourself or a loved one to
@@ -284,38 +284,41 @@
          <!-- ================= How to made it Section ================ -->
          <!-- Андрей Навроцкий -->
          <section class="howtomade-section">
-   <div class="container">
+   <div class="howtomade-container">
       <h2 class="howtomade-title">
          hOW IT’S<span class="howtomade-title-span">&nbsp;made?</span>
       </h2>
       <div class="howtomade-wrapper">
-         <div class="howtomade-left-side">
-            <picture class="howtomade-img-wrap">
-               <source
-                  srcset="/simlply-chocolate-group4-/assets/video-wpapper-desktop-x1-b85ef13c.jpg 1x, /simlply-chocolate-group4-/assets/video-wpapper-desktop-x2-fff42952.jpg 2x"
-                  media="(min-width: 1200px)"
-               />
-               <source
-                  srcset="/simlply-chocolate-group4-/assets/video-wpapper-tablet-x1-14e1b7ba.jpg 1x, /simlply-chocolate-group4-/assets/video-wpapper-tablet-x2-d509d126.jpg 2x"
-                  media="(min-width: 768px)"
-               />
-               <source
-                  srcset="/simlply-chocolate-group4-/assets/video-wpapper-mobile-x1-20078c35.jpg 1x, /simlply-chocolate-group4-/assets/video-wpapper-mobile-x2-e92da275.jpg 2x"
-                  media="(max-width: 767px)"
-               />
-               <img
-                  class="howtomade-img"
-                  src="/simlply-chocolate-group4-/assets/video-wpapper-desktop-x1-b85ef13c.jpg"
-                  alt="making-chocolate-photo"
-               />
-            </picture>
-            <svg class="howtomade-icon-wrap" width="44" height="44">
-               <use
-                  href="/simlply-chocolate-group4-/assets/play-e4a0e802.svg#icon-play"
-                  class="howtomade-icon"
-               ></use>
-            </svg>
-         </div>
+         <picture class="howtomade-img-wrap">
+            <source
+               srcset="/simlply-chocolate-group4-/assets/video-wpapper-desktop-x1-b85ef13c.jpg 1x, /simlply-chocolate-group4-/assets/video-wpapper-desktop-x2-fff42952.jpg 2x"
+               media="(min-width: 1200px)"
+            />
+            <source
+               srcset="/simlply-chocolate-group4-/assets/video-wpapper-tablet-x1-14e1b7ba.jpg 1x, /simlply-chocolate-group4-/assets/video-wpapper-tablet-x2-d509d126.jpg 2x"
+               media="(min-width: 768px)"
+            />
+            <source
+               srcset="/simlply-chocolate-group4-/assets/video-wpapper-mobile-x1-20078c35.jpg 1x, /simlply-chocolate-group4-/assets/video-wpapper-mobile-x2-e92da275.jpg 2x"
+               media="(max-width: 767px)"
+            />
+            <img class="howtomade-img"
+               src="/simlply-chocolate-group4-/assets/video-wpapper-desktop-x1-b85ef13c.jpg"
+               alt="making-chocolate-photo"
+               width="600"
+               height="400"
+            />
+            <a class="howtomade-icon-link" 
+               href=""
+					target="_blank"
+					rel="noopener noreferrer nofollow">
+               <svg class="howtomade-icon-wrap" width="44" height="44">
+                  <use href="/simlply-chocolate-group4-/assets/play-e4a0e802.svg" alt="" class="howtomade-icon"></use>
+               </svg>
+            </a>
+            <iframe class="howtomade-video" width="600" height="400" src="https://www.youtube.com/embed/41UbWmXKWkc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         </picture>
+         
          <div class="howtomade-desc-wrap">
             <h3 class="howtomade-subtitle">
                Try our chocolates today and discover the perfect balance of
@@ -362,12 +365,11 @@
       </div>
    </div>
 </section>
-
          <!-- ================= How to made it Section ================ -->
 
          <!-- =============== Products Section ================ -->
          <!-- Настя Никитина -->
-         <section class="section-product">
+         <section class="section-product" id="products">
    <h2 class="section-product-title">Our<span>products</span></h2>
    <ul class="section-product-list">
       <li class="section-product-item">
@@ -489,7 +491,7 @@
 
          <!-- =============== Sellers Section ================ -->
          <!-- Tania -->
-         <section class="sellers-section">
+         <section class="sellers-section" id="sellers">
   <div class="container sellers-container">    
     <h2 class="sellers-title"><span class="sellers-title-text">Top</span> Sellers</h2>
     <ul class="sellers-list">
@@ -596,7 +598,7 @@
 
          <!-- =============== Rewiews Section ================ -->
          <!-- Оксана Шипик -->
-         <section class="review">
+         <section class="review" id="review">
     <h2>CHOCOLATE IS LOVED</h2>
     <ul>
         <li>
@@ -750,5 +752,6 @@
       </footer>
       <!-- =============== Footer ================ -->
       
+      <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
    </body>
 </html>
