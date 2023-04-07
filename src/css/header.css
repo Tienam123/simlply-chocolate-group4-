@@ -29,6 +29,10 @@
    stroke: black;
    width: 24px;
    height: 16px;
+   transition: all 500ms linear;
+}
+.menu-button-icon:hover{
+   stroke:var(--FooterSecondText);
 }
 .icon-burger {
 }
@@ -81,11 +85,13 @@
 }
 .social-link:hover svg,
 .social-link:focus svg {
-   stroke:var(--FooterSecondText)
+   stroke:var(--FooterSecondText);
+   transform: rotate(360deg);
 }
 
 .social-link svg {
-   transition: all 500ms linear;
+   transition: stroke 500ms linear,
+   transform 350ms linear;
    width: 20px;
    height: 20px;
    stroke: #111111;
@@ -96,13 +102,14 @@
 .social-mobile-item {
 }
 .social-mobile-link svg {
-   transition: all 500ms linear;
+   transition: stroke 500ms linear,transform 350ms linear;
    fill: #111111;
    stroke: #fff;
 }
 
 .social-mobile-link:hover svg,
 .social-mobile-link:focus svg {
+   transform: rotate(360deg);
    fill: #111111;
    stroke: #FD9222;
 }
@@ -215,7 +222,9 @@
    transform: translateX(0);
     }
    
-
+    button.js-close-menu svg{
+      transition:all 500ms linear;
+    }
     button.js-close-menu:focus svg,
     button.js-close-menu:hover svg {
       stroke: var(--FooterSecondText);
