@@ -85,6 +85,7 @@
    width: 13px;
    height: 13px;
    background: rgba(17, 17, 17, 0.1);
+   transition: background-color 250ms ease-in-out;
 }
 
 .section-product .swiper-pagination-bullet-active {
