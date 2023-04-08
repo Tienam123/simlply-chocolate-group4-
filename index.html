@@ -22,7 +22,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
    />
   <script type="module" crossorigin src="/simlply-chocolate-group4-/assets/index-863f0edc.js"></script>
-  <link rel="stylesheet" href="/simlply-chocolate-group4-/assets/index-376f4d73.css">
+  <link rel="stylesheet" href="/simlply-chocolate-group4-/assets/index-925d8066.css">
 </head>
 <body></body>
 
@@ -390,121 +390,150 @@
          <!-- =============== Products Section ================ -->
          <!-- Настя Никитина -->
          <section class="section-product" id="products">
-   <h2 class="section-product-title">Our<span>products</span></h2>
-   <ul class="section-product-list">
-      <li class="section-product-item">
-         <!-- <img
-            srcset="./img/ 1x, ./img/ 2x"
-            src="./img/"
-            alt="Dark chocolate with orange"
-            width="230"
-            height="201"
-         /> -->
-         <div class="product-item-content">
-            <h3 class="product-item-title">orange</h3>
-            <p class="product-item-description">Dark chocolate</p>
-         </div>
-         <button type="button" class="product-item-btn">45 UAH</button>
-      </li>
-      <li class="section-product-item">
-         <!-- <img
-            srcset="./img/ 1x, ./img/ 2x"
-            src="./img/"
-            alt="Milk chocolate with apple and cranberry"
-            width="230"
-            height="201"
-         /> -->
-         <div class="product-item-content">
-            <h3 class="product-item-title">APPLE&#38;CRANBERRY</h3>
-            <p class="product-item-description">Milk chocolate</p>
-         </div>
-         <button type="button" class="product-item-btn">50 UAH</button>
-      </li>
-      <li class="section-product-item">
-         <!-- <img
-            srcset="./img/ 1x, ./img/ 2x"
-            src="./img/"
-            alt="Dark chocolate with lime and sea salt"
-            width="230"
-            height="201"
-         /> -->
-         <div class="product-item-content">
-            <h3 class="product-item-title">lime&#38;sea salt</h3>
-            <p class="product-item-description">Dark chocolate</p>
-         </div>
-         <button type="button" class="product-item-btn">66 UAH</button>
-      </li>
-      <li class="section-product-item">
-         <!-- <img
-            srcset="./img/ 1x, ./img/ 2x"
-            src="./img/"
-            alt="Dark chocolate with pineapple"
-            width="230"
-            height="201"
-         /> -->
-         <div class="product-item-content">
-            <h3 class="product-item-title">pineapple</h3>
-            <p class="product-item-description">Dark chocolate</p>
-         </div>
-         <button type="button" class="product-item-btn">54 UAH</button>
-      </li>
-      <li class="section-product-item">
-         <!-- <img
-            srcset="./img/ 1x, ./img/ 2x"
-            src="./img/"
-            alt="Classic milk chocolate"
-            width="230"
-            height="201"
-         /> -->
-         <div class="product-item-content">
-            <h3 class="product-item-title">Classic</h3>
-            <p class="product-item-description">Milk chocolate</p>
-         </div>
-         <button type="button" class="product-item-btn">45 UAH</button>
-      </li>
-      <li class="section-product-item">
-         <!-- <img
-            srcset="./img/ 1x, ./img/ 2x"
-            src="./img/"
-            alt="Milk chocolate with honey"
-            width="230"
-            height="201"
-         /> -->
-         <div class="product-item-content">
-            <h3 class="product-item-title">honey</h3>
-            <p class="product-item-description">Milk chocolate</p>
-         </div>
-         <button type="button" class="product-item-btn">50 UAH</button>
-      </li>
-      <li class="section-product-item">
-         <!-- <img
-            srcset="./img/ 1x, ./img/ 2x"
-            src="./img/"
-            alt="Dark chocolate with roasted fruits"
-            width="230"
-            height="201"
-         /> -->
-         <div class="product-item-content">
-            <h3 class="product-item-title">Roasted fruits</h3>
-            <p class="product-item-description">Dark chocolate</p>
-         </div>
-         <button type="button" class="product-item-btn">66 UAH</button>
-      </li>
-      <li class="section-product-item">
-         <!-- <img
-            srcset="./img/ 1x, ./img/ 2x"
-            src="./img/"
-            alt="Classic white chocolate"
-            width="230"
-            height="201"
-         /> -->
-         <div class="product-item-content">
-            <h3 class="product-item-title">Classic</h3>
-            <p class="product-item-description">White chocolate</p>
-         </div>
-         <button type="button" class="product-item-btn">54 UAH</button>
-      </li>
-   </ul>
+   <div class="container-product">
+      <h2 class="section-product-title">Our <span>products</span></h2>
+      <div class="swiper-product swiper-container">
+         <ul class="section-product-list swiper-wrapper">
+            <li class="section-product-item swiper-slide">
+               <img
+                  srcset="
+                     ../img/product/product-orange.jpg    1x,
+                     ../img/product/product-orange@2x.jpg 2x
+                  "
+                  src="../img/product/product-orange.jpg"
+                  alt="Dark chocolate with orange"
+                  width="230"
+                  height="201"
+               />
+               <div class="product-item-content">
+                  <h3 class="product-item-title">orange</h3>
+                  <p class="product-item-description">Dark chocolate</p>
+               </div>
+               <button type="button" class="product-item-btn">45 UAH</button>
+            </li>
+            <li class="section-product-item swiper-slide">
+               <img
+                  srcset="
+                     ../img/product/product-apple-cranberry.jpg    1x,
+                     ../img/product/product-apple-cranberry@2x.jpg 2x
+                  "
+                  src="../img/product/product-apple-cranberry.jpg"
+                  alt="Milk chocolate with apple and cranberry"
+                  width="230"
+                  height="201"
+               />
+               <div class="product-item-content">
+                  <h3 class="product-item-title">APPLE&#38;CRANBERRY</h3>
+                  <p class="product-item-description">Milk chocolate</p>
+               </div>
+               <button type="button" class="product-item-btn">50 UAH</button>
+            </li>
+            <li class="section-product-item swiper-slide">
+               <img
+                  srcset="
+                     ../img/product/product-lime-sea-salt.jpg    1x,
+                     ../img/product/product-lime-sea-salt@2x.jpg 2x
+                  "
+                  src="../img/product/product-lime-sea-salt.jpg"
+                  alt="Dark chocolate with lime and sea salt"
+                  width="230"
+                  height="201"
+               />
+               <div class="product-item-content">
+                  <h3 class="product-item-title">lime&#38;sea salt</h3>
+                  <p class="product-item-description">Dark chocolate</p>
+               </div>
+               <button type="button" class="product-item-btn">66 UAH</button>
+            </li>
+            <li class="section-product-item swiper-slide">
+               <img
+                  srcset="
+                     ../img/product/product-pineapple.jpg    1x,
+                     ../img/product/product-pineapple@2x.jpg 2x
+                  "
+                  src="../img/product/product-pineapple.jpg"
+                  alt="Dark chocolate with pineapple"
+                  width="230"
+                  height="201"
+               />
+               <div class="product-item-content">
+                  <h3 class="product-item-title">pineapple</h3>
+                  <p class="product-item-description">Dark chocolate</p>
+               </div>
+               <button type="button" class="product-item-btn">54 UAH</button>
+            </li>
+            <li class="section-product-item swiper-slide">
+               <img
+                  srcset="
+                     ../img/product/product-classic-milk.jpg    1x,
+                     ../img/product/product-classic-milk@2x.jpg 2x
+                  "
+                  src="../img/product/product-classic-milk.jpg"
+                  alt="Classic milk chocolate"
+                  width="230"
+                  height="201"
+               />
+               <div class="product-item-content">
+                  <h3 class="product-item-title">Classic</h3>
+                  <p class="product-item-description">Milk chocolate</p>
+               </div>
+               <button type="button" class="product-item-btn">45 UAH</button>
+            </li>
+            <li class="section-product-item swiper-slide">
+               <img
+                  srcset="
+                     ../img/product/product-honey.jpg    1x,
+                     ../img/product/product-honey@2x.jpg 2x
+                  "
+                  src="../img/product/product-honey.jpg"
+                  alt="Milk chocolate with honey"
+                  width="230"
+                  height="201"
+               />
+               <div class="product-item-content">
+                  <h3 class="product-item-title">honey</h3>
+                  <p class="product-item-description">Milk chocolate</p>
+               </div>
+               <button type="button" class="product-item-btn">50 UAH</button>
+            </li>
+            <li class="section-product-item swiper-slide">
+               <img
+                  srcset="
+                     ../img/product/product-roasted-fruits.jpg    1x,
+                     ../img/product/product-roasted-fruits@2x.jpg 2x
+                  "
+                  src="../img/product/product-roasted-fruits.jpg"
+                  alt="Dark chocolate with roasted fruits"
+                  width="230"
+                  height="201"
+               />
+               <div class="product-item-content">
+                  <h3 class="product-item-title">Roasted fruits</h3>
+                  <p class="product-item-description">Dark chocolate</p>
+               </div>
+               <button type="button" class="product-item-btn">66 UAH</button>
+            </li>
+            <li class="section-product-item swiper-slide">
+               <img
+                  srcset="
+                     ../img/product/product-classic-white.jpg    1x,
+                     ../img/product/product-classic-white@2x.jpg 2x
+                  "
+                  src="../img/product/product-classic-white.jpg"
+                  alt="Classic white chocolate"
+                  width="230"
+                  height="201"
+               />
+               <div class="product-item-content swiper-slide">
+                  <h3 class="product-item-title">Classic</h3>
+                  <p class="product-item-description">White chocolate</p>
+               </div>
+               <button type="button" class="product-item-btn">54 UAH</button>
+            </li>
+         </ul>
+      </div>
+      <div class="swiper-pagination"></div>
+   </div>
 </section>
 
          <!-- =============== Products Section ================ -->
