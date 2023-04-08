@@ -1,0 +1,72 @@
+<div class="backdrop is-hidden reviews-container" data-first-modal>
+   <div class="modal-reviews">
+      <button class="reviews-close-btn btn-close modal-scroll" type="button" data-first-modal-close>
+         <svg class="reviews-close-btn-icon" width="24" height="24">
+            <use  href="/img/icons/icons.svg#icon-close"></use>
+         </svg>
+      </button>
+      <form class="modal-form-reviews">
+         <h2 class="reviews-title">
+            leave a review about&nbsp;<span class="reviews-title-text"
+               >our chocolate</span
+            >
+         </h2>
+         <div class="reviews-modal-field">
+            <input
+               type="text"
+               name="user_name"
+               placeholder="Name"               
+               class="reviews-form-input"
+            />
+         </div>
+         <div class="reviews-modal-field">
+            <input
+               type="email"
+               name="user_email"
+               placeholder="Enter your email"               
+               class="reviews-form-input"
+            />
+         </div>
+         <div class="reviews-modal-field phone">
+            <input
+               type="tel"
+               name="user_phone"
+               placeholder="Phone number"
+               pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+               title="xxx-xxx-xx-xx"               
+               class="reviews-form-input phone"
+            />
+            <div class="reviews-phone-code">
+               <img src="/img/popup/ukraine.png" alt="Flag of Ukraine" />
+               <span class="reviews-code">+380</span>
+               <span class="reviews-slash">|</span>
+            </div>
+         </div>
+         <div class="reviews-modal-field">
+            <textarea
+               name="user_message" 
+               placeholder="Enter text"
+               class="reviews-form-input-message reviews-form-input"></textarea>
+         </div>
+         <!-- ============= OPEN BTN для 4 модалки -->
+         <button class="reviews-send-btn" type="submit">Send</button>
+      </form>
+   </div>
+</div>
+
+<!-- =========================== NEW MODAL ======================================== -->
+
+<!-- <div class="backdrop-two" >
+   <div class="reviews-modal-two">
+      <button class="reviews-close-btn-two" type="button">
+         <svg class="reviews-close-btn-two-icon" width="24" height="24" >
+            <use href="../img/icons/icons.svg#icon-close"></use>
+         </svg>
+      </button>
+      <div class="reviews-modal-two-text">
+         <h2 class="reviews-two-description">Thank you for your feedback!</h2>
+      </div>
+      <a class="reviews-send-link" href="#home">Home</a>
+   </div>
+
+</div> -->
