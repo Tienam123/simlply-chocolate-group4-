@@ -113,6 +113,10 @@ screen and (min-resolution: 2dppx) {
    .hero-subtitle {
       max-width: 295px;
    }
+
+   .hero-buttons {
+      flex-direction: column;
+   }
 }
 
 /* TABLET */
