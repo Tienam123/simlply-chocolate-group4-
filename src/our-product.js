@@ -8,7 +8,7 @@ const swiper = new Swiper('.swiper-product', {
    },
    simulateTouch: true,
    touchRatio: 2,
-   slideToClecedSlide: true,
+   slideToClickedSlide: true,
    freeMode: true,
    a11y: {
       enabled: true,
