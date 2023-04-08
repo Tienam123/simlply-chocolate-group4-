@@ -21,8 +21,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
    />
-  <script type="module" crossorigin src="/simlply-chocolate-group4-/assets/index-c33709cf.js"></script>
-  <link rel="stylesheet" href="/simlply-chocolate-group4-/assets/index-8e802591.css">
+  <script type="module" crossorigin src="/simlply-chocolate-group4-/assets/index-d5c83346.js"></script>
+  <link rel="stylesheet" href="/simlply-chocolate-group4-/assets/index-96886757.css">
 </head>
 <body></body>
 
@@ -31,7 +31,7 @@
       <!-- Владислав Гончар  -->
       <header class="header">
          <div class="container">
-   <nav class="nav">
+   <nav class="nav" id="ancor">
       <a class="logo" href="./index.html"
          ><span class="logo-text">SIMPLY CHOCOLATE</span ><span class="logo-icon"><img src="/simlply-chocolate-group4-/assets/logo-desktop-3095ef1a.svg" alt=""></span></a
       >
@@ -914,8 +914,25 @@
                class="reviews-form-input-message reviews-form-input"></textarea>
          </div>
          <!-- ============= OPEN BTN для 4 модалки -->
-         <button class="reviews-send-btn" type="submit">Send</button>
+         <button class="reviews-send-btn" type="submit" data-first-modal-close data-modal-open  >Send</button>
       </form>
+   </div>
+</div>
+<!-- =========================== NEW MODAL ======================================== -->
+
+<div class="backdrop-two is-hidden" data-modal >
+   <div class="reviews-modal-two">
+      <!-- <button class="reviews-close-btn-two" type="button"  >
+         <svg class="reviews-close-btn-two-icon" width="24" height="24" >
+            <use href="../img/icons/icons.svg#icon-close"></use>
+         </svg>
+      </button> -->
+      <div class="reviews-modal-two-text">
+         <h2 class="reviews-two-description">Thank you for your feedback!</h2>
+         <a class="reviews-send-link" href="#ancor">
+      <button class="reviews-send-two-btn" type="button" data-modal-close>CLOSE</button>
+      </a>  
+      </div>          
    </div>
 </div>
 
@@ -985,6 +1002,7 @@
 </footer>
       </footer>
       <!-- =============== Footer ================ -->
+      
       
       
       
