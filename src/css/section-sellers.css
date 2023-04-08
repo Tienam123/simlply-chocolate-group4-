@@ -1,14 +1,7 @@
 .sellers-section {
    padding-top: 72px;
-   background-color: #e2e2e2;
 }
-.sellers-container {
-   margin-left: auto;
-   margin-right: auto;
-   /* max-width: 365px; */
-   padding-left: 20px;
-   padding-right: 20px;
-}
+
 .sellers-title {
    font-weight: 600;
    font-size: 20px;
@@ -16,11 +9,22 @@
    text-align: center;
    letter-spacing: -0.03em;
    text-transform: uppercase;
-   color: var(--dark);
+
    margin-bottom: 32px;
 }
 .sellers-title-text {
    color: var(--Orange);
+}
+.sellers-list-item {
+   overflow: hidden;
+   border-radius: 15px;
+  }
+.sellers-list-item img {
+   transition: transform 1000ms ease;
+}
+
+.sellers-list-item:hover img {
+   transform: scale(1.1);
 }
 .sellers-img {
    width: 335px;
@@ -32,22 +36,16 @@
    flex-direction: column;
 }
 
-.sellers-description {
-   font-size: 14px;
-   line-height: 1.29;
-   letter-spacing: -0.02em;
-   color: var(--dark);
-}
 .sellers-btn {
    display: block;
    padding: 12px 28px;
-   font-weight: 600;
-   font-size: 14px;
+   font-weight: 600;   
    line-height: 1.21;
    color: var(--Main-white);
    background: var(--Orange);
    border-radius: 100px;
    border: transparent;
+   transition: background-color var(--animation), color var(--animation);
 }
 .sellers-btn:is(:hover, :focus) {
    background-color: #fcf1e0;
@@ -58,14 +56,15 @@
    margin-left: auto;
    margin-right: auto;
 }
-.sellers-img {
-   transform: scale(1);
-}
-.sellers-img:is(:focus, :hover) {
-   transform: scale(1.05);
-}
 
 @media screen and (max-width: 767px) {
+   .sellers-container {
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+
    .sellers-list-item:nth-child(2) {
       margin-bottom: 20px;
       order: 2;
@@ -93,11 +92,10 @@
    .sellers-section {
       padding-top: 100px;
    }
-   .sellers-container {
-      /* max-width: 768px; */
+   /* .sellers-container {
       padding-left: 15px;
       padding-right: 15px;
-   }
+   } */
    .sellers-title {
       font-size: 24px;
       line-height: 1.17;
@@ -128,11 +126,6 @@
    .sellers-section {
       padding-top: 128px;
    }
-   .sellers-container {
-      max-width: 1166px;
-      padding-left: 15px;
-      padding-right: 15px;
-   }
    .sellers-img {
       width: 368px;
    }
@@ -152,16 +145,17 @@
    z-index: 100;
    background-color: rgba(46, 47, 66, 0.4);
    overflow: scroll;
-   /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
    opacity: 1;
    visibility: visible;
+   transform: scale(1);
    backdrop-filter: blur(3px);
+   transition: opacity var(--animation), visibility var(--animation);
 }
 .backdrop.is-hidden {
    opacity: 0;
    visibility: hidden;
    pointer-events: none;
+   transform: scale(1.2);
 }
 html.is-active {
    overflow: hidden;
@@ -196,6 +190,7 @@ html.is-active {
    fill: var(--Main-white);
    stroke: var(--dark);
    padding: 6px;
+   transition: fill var(--animation), stroke var(--animation);
 }
 .reviews-close-btn:is(:hover, :focus) {
    fill: var(--Main-white);
@@ -228,6 +223,8 @@ html.is-active {
 
    border-radius: 13px;
    background-color: transparent;
+
+   transition: border var(--animation);
 }
 .reviews-form-input:is(:hover, :focus) {
    border: 2px solid var(--Orange);
@@ -262,6 +259,7 @@ html.is-active {
    height: 91px;
    resize: none;
 }
+
 .reviews-slash {
    color: rgba(64, 64, 64, 0.3);
 }
@@ -276,6 +274,8 @@ html.is-active {
    font-size: 14px;
    line-height: 1.21;
    color: #ffffff;
+
+   transition: background-color var(--animation), color var(--animation);
 }
 .reviews-send-btn:is(:hover, :focus) {
    background-color: #fcf1e0;
@@ -287,6 +287,12 @@ html.is-active {
    line-height: 1.21;
    letter-spacing: -0.02em;
    color: rgba(64, 64, 64, 0.3);
+
+   transition: color var(--animation);
+}
+.reviews-form-input:focus::placeholder,
+.reviews-form-input:hover::placeholder {
+   color: var(--Orange);
 }
 
 @media screen and (min-width: 768px) {
@@ -338,7 +344,6 @@ html.is-active {
    }
 }
 
-
 /* ===================================== NEW MODAL ==================================== */
 .backdrop-two {
    position: fixed;
@@ -359,7 +364,6 @@ html.is-active {
    opacity: 0;
    visibility: hidden;
    pointer-events: none;
-   
 }
 .reviews-modal-two-text {
    display: flex;
@@ -409,20 +413,20 @@ html.is-active {
    text-shadow: 4px 4px 10px var(--dark);
 }
 .reviews-send-link {
-  margin-left: auto;
+   margin-left: auto;
 }
-.reviews-send-two-btn{
+.reviews-send-two-btn {
    padding: 8px 15px;
    border-radius: 100px;
    background-color: transparent;
-   border: none;   
+   border: none;
    font-weight: 700;
    font-size: 20px;
    text-transform: uppercase;
    text-shadow: 2px 2px var(--Orange);
+   transition: color var(--animation), text-shadow var(--animation);
 }
-.reviews-send-two-btn:is(:hover, :focus){
+.reviews-send-two-btn:is(:hover, :focus) {
    color: var(--Orange);
-   text-shadow: 2px 2px var(--dark) ;
+   text-shadow: 2px 2px var(--dark);
 }
-
