@@ -79,6 +79,13 @@ screen and (min-resolution: 2dppx) {
    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.buy-now-button:hover,
+.buy-now-button:focus {
+   background: #FCF1E0;
+   color: #FD9222;
+}
+
+
 .how-its-made-button {
    padding: 12px 28px;
    border: 1px solid #ffffff;
@@ -86,6 +93,12 @@ screen and (min-resolution: 2dppx) {
    background: none;
 
    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.how-its-made-button:hover,
+.how-its-made-button:focus {
+   border: 1px solid #FD9222;
+   color: #FD9222;
 }
 
 .scroll-down-button {
@@ -98,6 +111,8 @@ screen and (min-resolution: 2dppx) {
    display: flex;
    align-items: center;
    gap: 12px;
+
+   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .scroll-down-icon {
@@ -106,7 +121,22 @@ screen and (min-resolution: 2dppx) {
    fill: #fd9222;
    background-color: #ffffff;
    border-radius: 50%;
+
+   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.scroll-down-button:hover,
+.scroll-down-button:focus {
+   color: #FD9222;
+}
+
+.scroll-down-button:hover .scroll-down-icon,
+.scroll-down-button:focus .scroll-down-icon {
+   background-color: #FD9222;
+   fill: #ffffff;
+}
+
+
 
 /* MOBILE SMALL */
 @media screen and (max-width: 374px) {
