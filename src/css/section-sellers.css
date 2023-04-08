@@ -163,9 +163,9 @@
    visibility: hidden;
    pointer-events: none;
 }
-/* html.is-active {
+html.is-active {
    overflow: hidden;
-} */
+}
 
 .modal-reviews {
    min-width: 311px;
