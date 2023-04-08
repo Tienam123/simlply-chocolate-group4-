@@ -80,7 +80,7 @@
 }
 
 .section-product .swiper-pagination {
-   position: absolute;
+   position: relative;
 }
 
 .section-product .swiper-pagination-bullet {
