@@ -1,13 +1,9 @@
 .section-product {
    padding-top: 72px;
-   position: relative;
 }
 
 .container-product {
    overflow: hidden;
-   padding: 0 15px;
-   margin: 0 auto;
-   max-width: 365px;
 }
 
 .section-product-item {
@@ -36,7 +32,6 @@
 
 .section-product-item {
    width: 100%;
-   margin-right: 18px;
    background-color: var(--Main-white);
    text-align: center;
    border: 1px solid rgba(17, 17, 17, 0.1);
@@ -109,7 +104,6 @@
    }
 
    .container-product {
-      max-width: 734px;
       overflow: visible;
    }
 
@@ -130,7 +124,9 @@
       width: 100%;
       height: 100%;
       z-index: 1;
-      display: flex;
+      /* display: flex;
+      align-items: center;
+      justify-content: center; */
       box-sizing: content-box;
    }
 
@@ -145,7 +141,6 @@
    }
 
    .container-product {
-      max-width: 1166px;
       overflow: hidden;
    }
 
