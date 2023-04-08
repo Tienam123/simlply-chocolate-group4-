@@ -84,7 +84,8 @@
 .section-product .swiper-pagination-bullet {
    width: 13px;
    height: 13px;
-   background: var(--product-main-background);
+   background-color: var(--product-main-background);
+   transition: background-color 250ms ease-in-out;
 }
 
 .section-product .swiper-pagination-bullet-active {
