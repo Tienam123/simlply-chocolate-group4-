@@ -5,13 +5,9 @@
 }
 
 .components {  
-}
-/* 
-.container {
-
 padding-top: 72px;
 padding-bottom: 36px;
-} */
+}
 
 .component-title {
     font-family: 'Montserrat';
@@ -62,8 +58,6 @@ color: var(--Orange);
     border: 1px solid var(--Orange);
     border-radius: 15px;
 }
-
-.component-cards-interactive {}
 
 .component-cards-img {
     width: 336px;
@@ -119,11 +113,12 @@ color: var(--Orange);
     border: 1px solid var(--Main-white);
 
     transform: translate(0, 100%);
-    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .component-cards-interactive:focus .overlay,
 .component-cards-interactive:hover .overlay {
     transform: translate(0, 0);
+   
 }
 
 .component-cards-animation {
@@ -131,7 +126,6 @@ color: var(--Orange);
     position: absolute;
     background-color: var(--Main-white);
     overflow: hidden;
- 
 }
 
 .component-subtitle-row {
@@ -152,7 +146,6 @@ color: var(--Orange);
     row-gap: 6px;
    text-align: center;
    margin-bottom: 14px;
-   
 }
 
 .component-label-text {
@@ -197,7 +190,6 @@ color: var(--Orange);
 
 
 
-
 @media screen and (min-width:375px) and (max-width:767px) {
     .container {
         max-width: 365px;
@@ -205,6 +197,18 @@ color: var(--Orange);
 }
 
 @media screen and (min-width:768px) {
+    .components {  
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+        .component-title {
+            padding-left: 146px;
+            padding-right: 146px;
+        }
+        .component-sub-text {
+            padding-left: 109px;
+            padding-right: 109px;
+        }
 
     .component-title {
         margin-bottom: 28px;
@@ -217,29 +221,44 @@ color: var(--Orange);
         flex-wrap: wrap;
         row-gap: 32px;
         justify-content: space-between;
-       
     }
-   
-
+ 
+   .list-item {
+   order: 1;
+   }
 }
 
 @media screen and (min-width:1200px) {
-
-
+    .components {  
+        padding-top: 128px;
+        padding-bottom: 64px;
+    }
+    .component-title {
+        padding-left: 380px;
+        padding-right: 380px;
+    }
+    .component-sub-text {
+        padding-left: 325px;
+        padding-right: 325px;
+     }
+       
     .overlay {
         padding: 18px;
-        overflow-y: auto;
-        scrollbar-color: 
+        overflow-y: scroll;
     }
+
     ::-webkit-scrollbar {
-        width: 4px;
-        background-color: inherit;
+        width: 2px;
+        scroll-behavior: smooth;
+        /* background-color: inherit; */
     }
    
     .component-cards-img {
         width: 270px;
         height: 270px;
     }
-   
+     .list-item {
+     order: 0;
+    }
 }
  
