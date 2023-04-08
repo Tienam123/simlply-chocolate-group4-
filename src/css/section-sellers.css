@@ -338,6 +338,7 @@
    }
 }
 
+
 /* ===================================== NEW MODAL ==================================== */
 .backdrop-two {
    position: fixed;
@@ -424,3 +425,4 @@
    color: var(--Orange);
    text-shadow: 2px 2px var(--dark) ;
 }
+
