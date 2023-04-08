@@ -32,7 +32,6 @@
    margin: 24px auto;
    font-size: 14px;
    line-height: 1.2;
-   width: 326px;
 
    text-align: center;
    letter-spacing: -0.02em;
@@ -63,6 +62,13 @@
 
 /* MOBILE */
 @media screen and (min-width: 375px) and (max-width: 767px) {
+   .subscribe-text {
+     
+      width: 326px;
+   
+   }
+  
+  
    .section-subscribe {
       background-image: linear-gradient(
             0deg,
@@ -113,9 +119,6 @@
    .section-subscribe {
       text-align: center;
       margin: 0 auto;
-
-      max-width: 1200px;
-      width: 100%;
       background-size: cover;
       background-image: linear-gradient(
             0deg,
