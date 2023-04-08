@@ -21,8 +21,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
    />
-  <script type="module" crossorigin src="/simlply-chocolate-group4-/assets/index-863f0edc.js"></script>
-  <link rel="stylesheet" href="/simlply-chocolate-group4-/assets/index-1f56d34e.css">
+  <script type="module" crossorigin src="/simlply-chocolate-group4-/assets/index-c33709cf.js"></script>
+  <link rel="stylesheet" href="/simlply-chocolate-group4-/assets/index-8e802591.css">
 </head>
 <body></body>
 
@@ -36,23 +36,23 @@
          ><span class="logo-text">SIMPLY CHOCOLATE</span ><span class="logo-icon"><img src="/simlply-chocolate-group4-/assets/logo-desktop-3095ef1a.svg" alt=""></span></a
       >
 
-      <ul class="nav-menu">
-         <li class="nav-menu-item">
-            <a href="#" class="nav-menu-link"
-               ><span class="nav-link-line"></span>Home</a
+      <ul class="nav-menu-desktop">
+         <li class="nav-menu-item-desktop">
+            <a href="#home" class="nav-menu-link-desktop"
+               ><span class="nav-link-line-desktop"></span>Home</a
             >
          </li>
-         <li class="nav-menu-item">
-            <a href="#" class="nav-menu-link">How it’s made?</a>
+         <li class="nav-menu-item-desktop">
+            <a href="#howtomade" class="nav-menu-link-desktop">How it’s made?</a>
          </li>
-         <li class="nav-menu-item">
-            <a href="#" class="nav-menu-link">Our products</a>
+         <li class="nav-menu-item-desktop">
+            <a href="#products" class="nav-menu-link-desktop">Our products</a>
          </li>
-         <li class="nav-menu-item">
-            <a href="#" class="nav-menu-link">Top sellers</a>
+         <li class="nav-menu-item-desktop">
+            <a href="#sellers" class="nav-menu-link-desktop">Top sellers</a>
          </li>
-         <li class="nav-menu-item">
-            <a href="#" class="nav-menu-link">Chocolate is loved</a>
+         <li class="nav-menu-item-desktop">
+            <a href="#revievs" class="nav-menu-link-desktop">Chocolate is loved</a>
          </li>
       </ul>
 
@@ -83,21 +83,21 @@
         
          <ul class="nav-menu">
             <li class="nav-menu-item">
-               <a href="#" class="menu-toggle nav-menu-link  modal-scroll"
+               <a href="#home" class="menu-toggle nav-menu-link  modal-scroll"
                   ><span class="nav-link-line"></span>Home</a
                >
             </li>
             <li class="nav-menu-item">
-               <a href="#" class="menu-toggle nav-menu-link  modal-scroll">How it’s made?</a>
+               <a href="#howtomade" class="menu-toggle nav-menu-link  modal-scroll">How it’s made?</a>
             </li>
             <li class="nav-menu-item">
-               <a href="#" class="menu-toggle nav-menu-link  modal-scroll">Our products</a>
+               <a href="#products" class="menu-toggle nav-menu-link  modal-scroll">Our products</a>
             </li>
             <li class="nav-menu-item">
-               <a href="#" class="menu-toggle nav-menu-link  modal-scroll">Top sellers</a>
+               <a href="#sellers" class="menu-toggle nav-menu-link  modal-scroll">Top sellers</a>
             </li>
             <li class="nav-menu-item">
-               <a href="#" class="menu-toggle nav-menu-link  modal-scroll">Chocolate is loved</a>
+               <a href="#revievs" class="menu-toggle nav-menu-link  modal-scroll">Chocolate is loved</a>
             </li>
          </ul>
 
@@ -155,7 +155,7 @@
          of pure delight!</h2>
        <div class="hero-actions">
          <div class="hero-buttons">
-           <button class="button buy-now-button" type="button">Buy now</button>
+           <button class="button buy-now-button modal-scroll" type="button" data-second-modal-open>Buy now</button>
            <a class="button how-its-made-button" href="#howtomade">How it&#39;s made</a>
          </div>
          <a class="scroll-down-button" href="#footer">scroll down<svg class="scroll-down-icon" width="16" height="16">
@@ -303,7 +303,7 @@
 
          <!-- ================= How to made it Section ================ -->
          <!-- Андрей Навроцкий -->
-         <section class="howtomade-section">
+         <section class="howtomade-section" id="howtomade">
    <div class="howtomade-container">
       <h2 class="howtomade-title">
          hOW IT’S<span class="howtomade-title-span">&nbsp;made?</span>
@@ -571,12 +571,12 @@
          <li class="sellers-list-item three">
             <picture>
                <source
-                  srcset="/simlply-chocolate-group4-/assets/item-3-desktop-x2-d903788c.jpg 1x, /simlply-chocolate-group4-/assets/item-3-desktop-x2-d903788c.jpg 2x"
+                  srcset="/simlply-chocolate-group4-/assets/item-3-desktop-x1-d903788c.jpg 1x, /simlply-chocolate-group4-/assets/item-3-desktop-x1-d903788c.jpg 2x"
                   media="(min-width: 1200px)"
                />
                <img
                   class="sellers-img"
-                  src="/simlply-chocolate-group4-/assets/item-3-desktop-x2-d903788c.jpg"
+                  src="/simlply-chocolate-group4-/assets/item-3-desktop-x1-d903788c.jpg"
                   alt="Photo  of chocolate stacked in a pyramid"
                   width="368"
                   height="464"
@@ -598,89 +598,148 @@
    </div>
 </section>
 <!-- =================== MODAL OPEN BTN видалити пізніше -->
-<button class="open-btn modal-scroll" type="button" data-first-modal-open>
-   DELETE
-</button>
 
          <!-- =============== Sellers Section ================ -->
 
          <!-- =============== Rewiews Section ================ -->
          <!-- Оксана Шипик -->
-         <section class="review">
-    <div class="container">
-        <h2 class="review-title">Chocolate <span class="review-title-black">is loved</span> </h2>
-        <ul class="review-list">
-            <li class="review-items">
-                <div class="review-cards">
-                    <img class="review-cards-foto"
-                        srcset="../img/revievs/dobrzhanska.png 1x, ../img/revievs/dobrzhanska@2x.png 2x" width="80"
-                        src="../img/revievs/dobrzhanska.png" alt="woman">
-                    <h3 class="revies-items-title">Victoria Dobrzhanska</h3>
-                    <p class="review-cards-text">I love this chocolate bar. Perfect combination of light crispy wafer,
-                        covered in a thin layer chocolate.
-                    </p>
-                </div>
-            </li>
-            <li class="review-items">
-                <div class="review-cards">
-                    <img class="review-cards-foto"
-                        srcset="../img/revievs/babenko.png 1x, ../img/revievs/babenko@2x.png 2x" width="80"
-                        src="../img/revievs/babenko.png" alt="man">
-                    <h3 class="revies-items-title">Nazar Babenko</h3>
-                    <p class="review-cards-text">This chocolate confection is a delight! A delight! The wafer is light
-                        and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
-                </div>
-            </li>
-            <li class="review-items">
-                <div class="review-cards">
-                    <img class="review-cards-foto"
-                        srcset="../img/revievs/kampusch.png 1x, ../img/revievs/kampusch@2x.png 2x" width="80"
-                        src="../img/revievs/kampusch.png" alt="woman">
-                    <h3 class="revies-items-title">Olena Kampusch</h3>
-                    <p class="review-cards-text">Chocolate is a family favourite treat. Love the delicious smooth
-                        chocolate and the creaminess inside. The wafer is soft
-                        but crunchy.</p>
-                </div>
-            </li>
-            <li class="review-items">
-                <div class="review-cards">
-                    <img class="review-cards-foto"
-                        srcset="../img/revievs/nataliasus.png 1x, ../img/revievs/nataliasus@2x.png 2x" width="80"
-                        src="../img/revievs/nataliasus.png" alt="">
-                    <h3 class="revies-items-title">Natalia Sus</h3>
-                    <p class="review-cards-text">The chocolate assortment was delicious. Both dark and milk chocolate
-                        pieces were smooth and just right on the
-                        sweetness level.</p>
-                </div>
-            </li>
-            <li class="review-items">
-                <div class="review-cards">
-                    <img class="review-cards-foto"
-                        srcset="../img/revievs/danilo-nottingham.png 1x, ../img/revievs/danilo-nottingham@2x.png 2x"
-                        width="80" src="../img/revievs/danilo-nottingham.png" alt="man">
-                    <h3 class="revies-items-title">Danilo Nottingham</h3>
-                    <p class="review-cards-text">This is delicious. It so rich and flavorful you don’t need to use as
-                        many. I love topping an apple with
-                        almond butter and these chips for a snack.</p>
-                </div>
-            </li>
-            <li class="review-items">
-                <div class="review-cards">
-                    <img class="review-cards-foto"
-                        srcset="../img/revievs/irina-tydnuk.png 1x, ../img/revievs/irina-tydnuk@2x.png 2x" width="80"
-                        src="../img/revievs/irina-tydnuk.png" alt="woman">
-                    <h3 class="revies-items-title">Irina Tydnyuk</h3>
-                    <p class="review-cards-text">This is simply the best chocolate around, and I'm just thrilled to
-                        support a local company! Best local
-                        chocolate - world
-                        class :)</p>
-                </div>
-            </li>
-        </ul>
-        
-        <button class="review-btn" type="button">Leave a review</button>
-    </div>
+         <section class="review" id="revievs">
+   <div class="container">
+      <h2 class="review-title">
+         Chocolate <span class="review-title-black">is loved</span>
+      </h2>
+      <ul class="review-list">
+         <li class="review-items">
+            <div class="review-cards">
+               <img
+                  class="review-cards-foto"
+                  srcset="
+                     ../img/revievs/dobrzhanska.png    1x,
+                     ../img/revievs/dobrzhanska@2x.png 2x
+                  "
+                  width="80"
+                  src="../img/revievs/dobrzhanska.png"
+                  alt="woman"
+               />
+               <h3 class="revies-items-title">Victoria Dobrzhanska</h3>
+               <p class="review-cards-text">
+                  I love this chocolate bar. Perfect combination of light crispy
+                  wafer, covered in a thin layer chocolate.
+               </p>
+            </div>
+         </li>
+         <li class="review-items">
+            <div class="review-cards">
+               <img
+                  class="review-cards-foto"
+                  srcset="
+                     ../img/revievs/babenko.png    1x,
+                     ../img/revievs/babenko@2x.png 2x
+                  "
+                  width="80"
+                  src="../img/revievs/babenko.png"
+                  alt="man"
+               />
+               <h3 class="revies-items-title">Nazar Babenko</h3>
+               <p class="review-cards-text">
+                  This chocolate confection is a delight! A delight! The wafer
+                  is light and crisp, the hazelnut cream is smooth, and the
+                  chocolate is good.
+               </p>
+            </div>
+         </li>
+         <li class="review-items">
+            <div class="review-cards">
+               <img
+                  class="review-cards-foto"
+                  srcset="
+                     ../img/revievs/kampusch.png    1x,
+                     ../img/revievs/kampusch@2x.png 2x
+                  "
+                  width="80"
+                  src="../img/revievs/kampusch.png"
+                  alt="woman"
+               />
+               <h3 class="revies-items-title">Olena Kampusch</h3>
+               <p class="review-cards-text">
+                  Chocolate is a family favourite treat. Love the delicious
+                  smooth chocolate and the creaminess inside. The wafer is soft
+                  but crunchy.
+               </p>
+            </div>
+         </li>
+         <li class="review-items">
+            <div class="review-cards">
+               <img
+                  class="review-cards-foto"
+                  srcset="
+                     ../img/revievs/nataliasus.png    1x,
+                     ../img/revievs/nataliasus@2x.png 2x
+                  "
+                  width="80"
+                  src="../img/revievs/nataliasus.png"
+                  alt=""
+               />
+               <h3 class="revies-items-title">Natalia Sus</h3>
+               <p class="review-cards-text">
+                  The chocolate assortment was delicious. Both dark and milk
+                  chocolate pieces were smooth and just right on the sweetness
+                  level.
+               </p>
+            </div>
+         </li>
+         <li class="review-items">
+            <div class="review-cards">
+               <img
+                  class="review-cards-foto"
+                  srcset="
+                     ../img/revievs/danilo-nottingham.png    1x,
+                     ../img/revievs/danilo-nottingham@2x.png 2x
+                  "
+                  width="80"
+                  src="../img/revievs/danilo-nottingham.png"
+                  alt="man"
+               />
+               <h3 class="revies-items-title">Danilo Nottingham</h3>
+               <p class="review-cards-text">
+                  This is delicious. It so rich and flavorful you don’t need to
+                  use as many. I love topping an apple with almond butter and
+                  these chips for a snack.
+               </p>
+            </div>
+         </li>
+         <li class="review-items">
+            <div class="review-cards">
+               <img
+                  class="review-cards-foto"
+                  srcset="
+                     ../img/revievs/irina-tydnuk.png    1x,
+                     ../img/revievs/irina-tydnuk@2x.png 2x
+                  "
+                  width="80"
+                  src="../img/revievs/irina-tydnuk.png"
+                  alt="woman"
+               />
+               <h3 class="revies-items-title">Irina Tydnyuk</h3>
+               <p class="review-cards-text">
+                  This is simply the best chocolate around, and I'm just
+                  thrilled to support a local company! Best local chocolate -
+                  world class
+               </p>
+            </div>
+         </li>
+      </ul>
+
+      <button
+         class="reviews-open-btn review-btn btn-open modal-scroll"
+         type="button"
+         data-first-modal-open
+      >
+         Leave a review
+      </button>
+   </div>
 </section>
+
          <!-- =============== Rewiews Section ================ -->
 
          <!-- ===============  Subscribe Section ================ -->
@@ -702,7 +761,107 @@
          <!-- =============== Main ================ -->
          <!-- Модалки -->
          <!-- Nastia -->
-         
+         <div class="backdrop is-hidden" data-second-modal>
+   <div class="modal-hero">
+      <form>
+         <button
+            class="hero-close-btn btn-close modal-scroll"
+            type="button"
+            data-second-modal-close
+         >
+            <svg>
+               <use href="../img/icons/icons.svg#icon-close"></use>
+            </svg>
+         </button>
+         <h1 class="hero-form-title">
+            <span class="hero-form-title-color">BUY</span> NOW
+         </h1>
+         <div class="hero-form-items">
+            <label class="hero-form-item-wrapper">
+               <input
+                  class="candy-order-checkbox"
+                  type="radio"
+                  name="candy"
+                  value="100g"
+               />
+               <div class="candy-order">
+                  <img src="/simlply-chocolate-group4-/assets/order-item1-051e51b4.png" alt="candy" />
+                  <p>100 g</p>
+               </div>
+            </label>
+
+            <label class="hero-form-item-wrapper">
+               <input type="radio" class="candy-order-checkbox" name="candy" value="200g" />
+               <div class="candy-order">
+                  <img src="/simlply-chocolate-group4-/assets/order-item2-721f2193.png" alt="cake" />
+                  <p>200 g</p>
+               </div>
+            </label>
+
+            <label class="hero-form-item-wrapper">
+               <input type="radio" class="candy-order-checkbox" name="candy" value="300g" />
+               <div class="candy-order">
+                  <img src="/simlply-chocolate-group4-/assets/order-item3-f108ee24.png" alt="candy" />
+                  <p>300 g</p>
+               </div>
+            </label>
+         </div>
+
+         <div class="pers-inf-wrapper">
+            <p class="pers-inf-text form-text">Personal information</p>
+            <div class="form-pers-inf-items">
+               <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  class="pers-inf-item hero-item-input"
+               />
+               <input
+                  type="text"
+                  name="surname"
+                  placeholder="Surname"
+                  class="pers-inf-item hero-item-input"
+               />
+            </div>
+         </div>
+         <label class="hero-form-email">
+            <p class="form-text">Email</p>
+            <input
+               type="text"
+               name="e-mail"
+               placeholder="Surname"
+               class="hero-email-input hero-item-input"
+            />
+         </label>
+         <label class="hero-form-phone">
+            <p class="form-text">Phone number</p>
+            <span class="counrty-icon">+380</span>
+            <input
+               type="text"
+               name="phone"
+               placeholder="Phone Number"
+               class="hero-phone-input hero-item-input"
+            />
+         </label>
+         <label class="hero-form-card">
+            <p class="form-text">Card number</p>
+            <span class="mastercard-icon"></span>
+            <input
+               type="text"
+               name="number-card"
+               placeholder="Enter Card"
+               class="hero-card-input hero-item-input"
+            />
+         </label>
+         <label class="hero-form-comment">
+            <p class="form-text">Comment</p>
+            <textarea  class="hero-item-input comment-input" name="comment" placeholder="Enter text"></textarea>
+         </label>
+         <button class="hero-form-send" type="submit">Submit</button>
+      </form>
+   </div>
+</div>
+
          <!-- Tania -->
          <div class="backdrop is-hidden reviews-container" data-first-modal>
    <div class="modal-reviews">
@@ -760,22 +919,7 @@
    </div>
 </div>
 
-<!-- =========================== NEW MODAL ======================================== -->
 
-<!-- <div class="backdrop-two" >
-   <div class="reviews-modal-two">
-      <button class="reviews-close-btn-two" type="button">
-         <svg class="reviews-close-btn-two-icon" width="24" height="24" >
-            <use href="../img/icons/icons.svg#icon-close"></use>
-         </svg>
-      </button>
-      <div class="reviews-modal-two-text">
-         <h2 class="reviews-two-description">Thank you for your feedback!</h2>
-      </div>
-      <a class="reviews-send-link" href="#home">Home</a>
-   </div>
-
-</div> -->
          <!--  -->
          
       </main>
@@ -842,10 +986,12 @@
       </footer>
       <!-- =============== Footer ================ -->
       
-      <!-- <script type="module" src="./modal.js"></script> -->
+      
       
       <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="./modal-copy.js"></script>
+      <script src="./our-product.js"></script>
 
    </body>
 </html>
