@@ -10,6 +10,7 @@ font-size: 14px;
 line-height: 1.28;
 letter-spacing: -0.02em;
 color: var(--dark);
+background-color: #E2E2E2;
 }
 
 @media screen and (max-width:374px) {
@@ -33,7 +34,7 @@ color: var(--dark);
 
 @media screen and (min-width:1200px) {
   .container {
-    width:1166px;
+    max-width:1166px;
   }  
 }
 
