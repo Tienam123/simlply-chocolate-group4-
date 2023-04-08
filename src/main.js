@@ -22,3 +22,8 @@
       openMenuBtn.setAttribute('aria-expanded', false);
    });
 })();
+
+
+$("window").load(function() {
+  $("body").removeAttr("id");
+});

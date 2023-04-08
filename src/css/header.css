@@ -155,15 +155,12 @@
 
    .menu-container.js-menu-container.is-open {
       
-      visibility: visible;
-      opacity: 1;
+    top: 0;
      
    }
    .menu-container.js-menu-container {
       position: absolute;
-      opacity: 0;
-      visibility: hidden;
-      top: 0;
+      top:-100%;
       right: 0;
       color: #fff;
       background-color: #1e1823;
@@ -174,7 +171,8 @@
       display: flex;
       justify-content: space-between;
       flex-direction: column;
-      transition:all 500ms linear;
+      transition: top 250ms linear;
+     
    }
    .nav-menu-item:not(:last-child) {
       margin-bottom: 24px;
