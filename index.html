@@ -15,8 +15,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
    />
-  <script type="module" crossorigin src="/simlply-chocolate-group4-/assets/index-dab77fb1.js"></script>
-  <link rel="stylesheet" href="/simlply-chocolate-group4-/assets/index-529810ea.css">
+  <script type="module" crossorigin src="/simlply-chocolate-group4-/assets/index-8347de7a.js"></script>
+  <link rel="stylesheet" href="/simlply-chocolate-group4-/assets/index-a2b78114.css">
 </head>
 
    <body>
@@ -597,7 +597,7 @@
             </p>
          </li>
          <li class="sellers-list-item five">
-            <button class="sellers-btn" type="button">Buy now</button>
+            <button class="button buy-now-button btn-open modal-scroll" type="button" data-second-modal-open>Buy now</button>
          </li>
       </ul>
    </div>
@@ -758,7 +758,7 @@
          with only the finest ingredients and handcrafted with the utmost care,
          each piece is a work of art that is sure to please.
       </p>
-      <button type="submit" class="subscribe-btn" data-third-modal>Subscribe</button>
+      <button type="submit" class="subscribe-btn modal-scroll" data-third-modal-open>Subscribe</button>
    </div>
 </section>
 
@@ -782,34 +782,40 @@
             <span class="hero-form-title-color">BUY</span> NOW
          </h1>
          <div class="hero-form-items">
-            <label class="hero-form-item-wrapper">
-               <input
-                  class="candy-order-checkbox"
-                  type="radio"
-                  name="candy"
-                  value="100g"
-               />
-               <div class="candy-order">
-                  <img src="/simlply-chocolate-group4-/assets/order-item1-051e51b4.png" alt="candy" />
-                  <p>100 g</p>
-               </div>
-            </label>
+            <a href="" class="candy-order-active">
+               <label class="hero-form-item-wrapper">
+                  <input
+                     class="candy-order-checkbox"
+                     type="radio"
+                     name="candy"
+                     value="100g"
+                  />
+                  <div class="candy-order">
+                     <img src="/simlply-chocolate-group4-/assets/order-item1-051e51b4.png" alt="candy" />
+                     <p>100 g</p>
+                  </div>
+               </label>
+            </a>
 
-            <label class="hero-form-item-wrapper">
-               <input type="radio" class="candy-order-checkbox" name="candy" value="200g" />
-               <div class="candy-order">
-                  <img src="/simlply-chocolate-group4-/assets/order-item2-721f2193.png" alt="cake" />
-                  <p>200 g</p>
-               </div>
-            </label>
+            <a href="#" class="candy-order-active">
+               <label class="hero-form-item-wrapper">
+                  <input type="radio" class="candy-order-checkbox" name="candy" value="200g" />
+                  <div class="candy-order">
+                     <img src="/simlply-chocolate-group4-/assets/order-item2-721f2193.png" alt="cake" />
+                     <p>200 g</p>
+                  </div>
+               </label>
+            </a>
 
-            <label class="hero-form-item-wrapper">
-               <input type="radio" class="candy-order-checkbox" name="candy" value="300g" />
-               <div class="candy-order">
-                  <img src="/simlply-chocolate-group4-/assets/order-item3-f108ee24.png" alt="candy" />
-                  <p>300 g</p>
-               </div>
-            </label>
+            <a href="#" class="candy-order-active">
+               <label class="hero-form-item-wrapper">
+                  <input type="radio" class="candy-order-checkbox" name="candy" value="300g" />
+                  <div class="candy-order">
+                     <img src="/simlply-chocolate-group4-/assets/order-item3-f108ee24.png" alt="candy" />
+                     <p>300 g</p>
+                  </div>
+               </label>
+            </a>
          </div>
 
          <div class="pers-inf-wrapper">
@@ -944,102 +950,35 @@
 
          <!--  -->
          <div class="backdrop is-hidden" data-third-modal>
-   <div class="modal-hero">
+   <div class="modal-subscribe">
       <form>
          <button
-            class="hero-close-btn btn-close modal-scroll"
+            class="subscribe-close-btn btn-close modal-scroll"
             type="button"
             data-third-modal-close
          >
             <svg>
-               <use href="../img/icons/icons.svg#icon-close"></use>
+               <use href="/simlply-chocolate-group4-/assets/icons-819ee90c.svg#icon-close"></use>
             </svg>
          </button>
-         <h1 class="hero-form-title">
-            <span class="hero-form-title-color">BUY</span> NOW
+       
+         <div class="subscribe-modal-bg"></div>
+         <div class="subscribe-form-items">
+         <h1 class="subscribe-form-title"> Explore our
+            <span class="subscribe-form-title-color">new chocolate</span> first! 
          </h1>
-         <div class="hero-form-items">
-            <label class="hero-form-item-wrapper">
-               <input
-                  class="candy-order-checkbox"
-                  type="radio"
-                  name="candy"
-                  value="100g"
-               />
-               <div class="candy-order">
-                  <img src="/simlply-chocolate-group4-/assets/order-item1-051e51b4.png" alt="candy" />
-                  <p>100 g</p>
-               </div>
-            </label>
+         
 
-            <label class="hero-form-item-wrapper">
-               <input type="radio" class="candy-order-checkbox" name="candy" value="200g" />
-               <div class="candy-order">
-                  <img src="/simlply-chocolate-group4-/assets/order-item2-721f2193.png" alt="cake" />
-                  <p>200 g</p>
-               </div>
-            </label>
-
-            <label class="hero-form-item-wrapper">
-               <input type="radio" class="candy-order-checkbox" name="candy" value="300g" />
-               <div class="candy-order">
-                  <img src="/simlply-chocolate-group4-/assets/order-item3-f108ee24.png" alt="candy" />
-                  <p>300 g</p>
-               </div>
-            </label>
+       
+            <input
+               type="text"
+               name="Email"
+               placeholder="Enter your E-mail"
+               class="subcribe-text-input"
+            />
+            <button class="subscribe-form-send" type="submit">Submit</button>
          </div>
-
-         <div class="pers-inf-wrapper">
-            <p class="pers-inf-text form-text">Personal information</p>
-            <div class="form-pers-inf-items">
-               <input
-                  type="text"
-                  name="name"
-                  placeholder="Name"
-                  class="pers-inf-item hero-item-input"
-               />
-               <input
-                  type="text"
-                  name="surname"
-                  placeholder="Surname"
-                  class="pers-inf-item hero-item-input"
-               />
-            </div>
-         </div>
-         <label class="hero-form-email">
-            <p class="form-text">Email</p>
-            <input
-               type="text"
-               name="e-mail"
-               placeholder="Surname"
-               class="hero-email-input hero-item-input"
-            />
-         </label>
-         <label class="hero-form-phone">
-            <p class="form-text">Phone number</p>
-            <span class="counrty-icon">+380</span>
-            <input
-               type="text"
-               name="phone"
-               placeholder="Phone Number"
-               class="hero-phone-input hero-item-input"
-            />
-         </label>
-         <label class="hero-form-card">
-            <p class="form-text">Card number</p>
-            <span class="mastercard-icon"></span>
-            <input
-               type="text"
-               name="number-card"
-               placeholder="Enter Card"
-               class="hero-card-input hero-item-input"
-            />
-         </label>
-         <label class="hero-form-comment">
-            <p class="form-text">Comment</p>
-            <textarea  class="hero-item-input comment-input" name="comment" placeholder="Enter text"></textarea>
-         </label>
-         <button class="hero-form-send" type="submit">Submit</button>
+        
       </form>
    </div>
 </div>
