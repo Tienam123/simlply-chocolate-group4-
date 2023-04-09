@@ -8,7 +8,7 @@
    background-position: center;
    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
    border-radius: 30px;
-   background-color: #1e1823;
+   background-color: var(--dark-violet);
    background-image: linear-gradient(180deg,
          rgba(17, 17, 17, 0) 0%,
          rgba(17, 17, 17, 0.4) 100%),
@@ -65,7 +65,7 @@ screen and (min-resolution: 2dppx) {
    font-weight: 600;
    font-size: 14px;
    line-height: 1.22;
-   background: #fd9222;
+   background: var(--Orange);
    border-radius: 100px;
    padding: 14px 40px;
    border: transparent;
@@ -79,6 +79,13 @@ screen and (min-resolution: 2dppx) {
    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.buy-now-button:hover,
+.buy-now-button:focus {
+   background: #FCF1E0;
+   color: var(--Orange);
+}
+
+
 .how-its-made-button {
    padding: 12px 28px;
    border: 1px solid #ffffff;
@@ -86,6 +93,12 @@ screen and (min-resolution: 2dppx) {
    background: none;
 
    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.how-its-made-button:hover,
+.how-its-made-button:focus {
+   border: 1px solid var(--Orange);
+   color: var(--Orange);
 }
 
 .scroll-down-button {
@@ -98,20 +111,41 @@ screen and (min-resolution: 2dppx) {
    display: flex;
    align-items: center;
    gap: 12px;
+
+   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .scroll-down-icon {
    width: 28px;
    height: 28px;
-   fill: #fd9222;
+   fill: var(--Orange);
    background-color: #ffffff;
    border-radius: 50%;
+
+   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.scroll-down-button:hover,
+.scroll-down-button:focus {
+   color: var(--Orange);
+}
+
+.scroll-down-button:hover .scroll-down-icon,
+.scroll-down-button:focus .scroll-down-icon {
+   background-color: var(--Orange);
+   fill: #ffffff;
+}
+
+
 
 /* MOBILE SMALL */
 @media screen and (max-width: 374px) {
    .hero-subtitle {
       max-width: 295px;
+   }
+
+   .hero-buttons {
+      flex-direction: column;
    }
 }
 
