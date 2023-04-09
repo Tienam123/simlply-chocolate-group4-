@@ -1,0 +1,100 @@
+<div class="backdrop is-hidden" data-third-modal>
+   <div class="modal-hero">
+      <form>
+         <button
+            class="hero-close-btn btn-close modal-scroll"
+            type="button"
+            data-third-modal-close
+         >
+            <svg>
+               <use href="../img/icons/icons.svg#icon-close"></use>
+            </svg>
+         </button>
+         <h1 class="hero-form-title">
+            <span class="hero-form-title-color">BUY</span> NOW
+         </h1>
+         <div class="hero-form-items">
+            <label class="hero-form-item-wrapper">
+               <input
+                  class="candy-order-checkbox"
+                  type="radio"
+                  name="candy"
+                  value="100g"
+               />
+               <div class="candy-order">
+                  <img src="./img/popup/order-item1.png" alt="candy" />
+                  <p>100 g</p>
+               </div>
+            </label>
+
+            <label class="hero-form-item-wrapper">
+               <input type="radio" class="candy-order-checkbox" name="candy" value="200g" />
+               <div class="candy-order">
+                  <img src="./img/popup/order-item2.png" alt="cake" />
+                  <p>200 g</p>
+               </div>
+            </label>
+
+            <label class="hero-form-item-wrapper">
+               <input type="radio" class="candy-order-checkbox" name="candy" value="300g" />
+               <div class="candy-order">
+                  <img src="./img/popup/order-item3.png" alt="candy" />
+                  <p>300 g</p>
+               </div>
+            </label>
+         </div>
+
+         <div class="pers-inf-wrapper">
+            <p class="pers-inf-text form-text">Personal information</p>
+            <div class="form-pers-inf-items">
+               <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  class="pers-inf-item hero-item-input"
+               />
+               <input
+                  type="text"
+                  name="surname"
+                  placeholder="Surname"
+                  class="pers-inf-item hero-item-input"
+               />
+            </div>
+         </div>
+         <label class="hero-form-email">
+            <p class="form-text">Email</p>
+            <input
+               type="text"
+               name="e-mail"
+               placeholder="Surname"
+               class="hero-email-input hero-item-input"
+            />
+         </label>
+         <label class="hero-form-phone">
+            <p class="form-text">Phone number</p>
+            <span class="counrty-icon">+380</span>
+            <input
+               type="text"
+               name="phone"
+               placeholder="Phone Number"
+               class="hero-phone-input hero-item-input"
+            />
+         </label>
+         <label class="hero-form-card">
+            <p class="form-text">Card number</p>
+            <span class="mastercard-icon"></span>
+            <input
+               type="text"
+               name="number-card"
+               placeholder="Enter Card"
+               class="hero-card-input hero-item-input"
+            />
+         </label>
+         <label class="hero-form-comment">
+            <p class="form-text">Comment</p>
+            <textarea  class="hero-item-input comment-input" name="comment" placeholder="Enter text"></textarea>
+         </label>
+         <button class="hero-form-send" type="submit">Submit</button>
+      </form>
+   </div>
+</div>
