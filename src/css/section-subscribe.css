@@ -81,15 +81,17 @@
       width: 326px;
    }
 
-   .section-subscribe {
-      background-image: linear-gradient(
-            0deg,
-            rgba(0, 0, 0, 0.2),
-            rgba(0, 0, 0, 0.2)
-         ),
-         url(/img/subscribe/subscribe-bc-mobile-x1.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
+   @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .section-subscribe {
+         background-image: linear-gradient(
+               0deg,
+               rgba(0, 0, 0, 0.2),
+               rgba(0, 0, 0, 0.2)
+            ),
+            url(/img/subscribe/subscribe-bc-mobile-x2.jpg);
+      }
    }
 }
 
@@ -105,24 +107,26 @@
       background-repeat: no-repeat;
       background-position: center;
    }
-}
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-   .section-subscribe {
-      background-image: linear-gradient(
-            0deg,
-            rgba(0, 0, 0, 0.2),
-            rgba(0, 0, 0, 0.2)
-         ),
-         url(/img/subscribe/subscribe-bc-tablet-x2.jpg);
-   }
+   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+      screen and (min-resolution: 192dpi) and (min-width: 768px),
+      screen and (min-resolution: 2dppx) and (min-width: 768px) {
+      .section-subscribe {
+         background-image: linear-gradient(
+               0deg,
+               rgba(0, 0, 0, 0.2),
+               rgba(0, 0, 0, 0.2)
+            ),
+            url(/img/subscribe/subscribe-bc-tablet-x2.jpg);
+      }
 
-   .container-subscribe {
-      padding: 72px 24px;
-   }
-   .subscribe-title {
-      font-size: 24px;
-      line-height: 1.16;
+      .container-subscribe {
+         padding: 72px 24px;
+      }
+      .subscribe-title {
+         font-size: 24px;
+         line-height: 1.16;
+      }
    }
 }
 
@@ -143,6 +147,19 @@
       max-width: 1200px;
       width: 100%;
    }
+   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+      screen and (min-resolution: 192dpi) and (min-width: 768px),
+      screen and (min-resolution: 2dppx) and (min-width: 768px) {
+      .section-subscribe {
+         background-image: linear-gradient(
+               0deg,
+               rgba(0, 0, 0, 0.2),
+               rgba(0, 0, 0, 0.2)
+            ),
+            url(/img/subscribe/subscribe-bc-desktop-x2.jpg);
+      }
+   }
+
    .container-subscribe {
       padding: 72px 24px;
    }
@@ -190,8 +207,6 @@
    right: 15px;
 }
 
-
-
 .subscribe-close-btn svg {
    stroke: #fff;
    width: 28px;
@@ -238,7 +253,7 @@
 }
 .subscribe-form-send:focus {
    background-color: #fff;
-   color:var(--Orange)
+   color: var(--Orange);
 }
 
 @media screen and (max-width: 767px) {
@@ -316,7 +331,6 @@
       line-height: 28px;
       width: 320px;
       margin-top: 40px;
-   
    }
    .subscribe-form-title-color {
    }
