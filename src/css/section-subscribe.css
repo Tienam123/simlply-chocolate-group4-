@@ -4,7 +4,7 @@
          rgba(0, 0, 0, 0.2),
          rgba(0, 0, 0, 0.2)
       ),
-      url(../img/subscribe/subscribe-bc-mobile-x1.jpg);
+      url(/img/subscribe/subscribe-bc-mobile-x1.jpg);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -19,7 +19,7 @@
             rgba(0, 0, 0, 0.2),
             rgba(0, 0, 0, 0.2)
          ),
-         url(../img/subscribe/subscribe-bc-mobile-x2.jpg);
+         url(/img/subscribe/subscribe-bc-mobile-x2.jpg);
    }
 }
 
@@ -70,7 +70,7 @@
 }
 
 .subscribe-btn:hover,
-:focus {
+.subscribe-btn:focus {
    background-color: #fcf1e0;
    color: var(--Orange);
 }
@@ -87,7 +87,7 @@
             rgba(0, 0, 0, 0.2),
             rgba(0, 0, 0, 0.2)
          ),
-         url(../img/subscribe/subscribe-bc-mobile-x1.jpg);
+         url(/img/subscribe/subscribe-bc-mobile-x1.jpg);
       background-repeat: no-repeat;
       background-position: center;
    }
@@ -101,7 +101,7 @@
             rgba(0, 0, 0, 0.2),
             rgba(0, 0, 0, 0.2)
          ),
-         url(../img/subscribe/subscribe-bc-tablet-x1.jpg);
+         url(/img/subscribe/subscribe-bc-tablet-x1.jpg);
       background-repeat: no-repeat;
       background-position: center;
    }
@@ -114,7 +114,7 @@
             rgba(0, 0, 0, 0.2),
             rgba(0, 0, 0, 0.2)
          ),
-         url(../img/subscribe/subscribe-bc-tablet-x2.jpg);
+         url(/img/subscribe/subscribe-bc-tablet-x2.jpg);
    }
 
    .container-subscribe {
@@ -137,7 +137,7 @@
             rgba(0, 0, 0, 0.2),
             rgba(0, 0, 0, 0.2)
          ),
-         url(../img/subscribe/subscribe-bc-desktop-x1.jpg);
+         url(/img/subscribe/subscribe-bc-desktop-x1.jpg);
       background-repeat: no-repeat;
       background-position: center;
       max-width: 1200px;
@@ -158,5 +158,180 @@
       width: 467px;
       text-align: center;
       letter-spacing: -0.02em;
+   }
+}
+
+/* =========== МОДАЛКА ================== */
+.backdrop {
+}
+.is-hidden {
+}
+.modal-subscribe {
+   position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translate(-50%, 0%) scale(1);
+   background-color: #fafafa;
+   border-radius: 15px;
+   letter-spacing: -0.03em;
+}
+
+@media screen and (max-width: 311px) {
+   .modal-subscribe {
+      width: 90%;
+   }
+}
+
+.subscribe-close-btn {
+   background-color: transparent;
+   border: none;
+   position: absolute;
+   top: 20px;
+   right: 15px;
+}
+
+
+
+.subscribe-close-btn svg {
+   stroke: #fff;
+   width: 28px;
+   height: 28px;
+}
+
+.hero-close-btn {
+}
+
+.modal-scroll {
+}
+.subscribe-modal-bg {
+   background-image: url(../img/popup/pop-up-bc-x1.jpg);
+   background-size: cover;
+   background-position: center center;
+   width: 100%;
+   height: 169px;
+   border-radius: 12px 12px 0 0;
+}
+.subscribe-form-title {
+   font-weight: 600;
+   text-transform: uppercase;
+   display: block;
+}
+.subscribe-form-title-color {
+   display: inline-block;
+   color: var(--Orange);
+}
+.subscribe-form-items {
+   padding: 0 24px;
+   position: relative;
+}
+.subcribe-text-input {
+   border-radius: 25px;
+   padding-left: 18px;
+   border: 1.5px solid rgba(17, 17, 17, 0.05);
+}
+.subscribe-form-send {
+   border-radius: 25px;
+   background-color: #fd9222;
+   border: 1px solid var(--Orange);
+   color: #fff;
+   transition: all var(--animation);
+}
+.subscribe-form-send:focus {
+   background-color: #fff;
+   color:var(--Orange)
+}
+
+@media screen and (max-width: 767px) {
+   .backdrop {
+   }
+   .is-hidden {
+   }
+   .modal-subscribe {
+      min-width: 311px;
+      min-height: 350px;
+   }
+   .subscribe-close-btn {
+   }
+   .subscribe-close-btn svg {
+      width: 24px;
+      height: 24px;
+   }
+   .btn-close {
+   }
+   .modal-scroll {
+   }
+   .subscribe-modal-bg {
+   }
+   .subscribe-form-title {
+      font-size: 20px;
+      line-height: 24px;
+      margin-top: 32px;
+      width: 270px;
+   }
+   .subscribe-form-title-color {
+   }
+   .subscribe-form-items {
+   }
+   .subcribe-text-input {
+      width: 100%;
+      display: block;
+      height: 45px;
+      margin-top: 24px;
+   }
+   .subcribe-text-input {
+   }
+   .subscribe-form-send {
+      position: absolute;
+      top: 54px;
+      right: 24px;
+      display: inline-block;
+      margin-top: 18px;
+      padding: 14px 22px;
+   }
+}
+
+@media screen and (min-width: 768px) {
+   .backdrop {
+   }
+   .is-hidden {
+   }
+   .modal-subscribe {
+      min-width: 538px;
+      min-height: 412px;
+   }
+   .subscribe-close-btn svg {
+      width: 28px;
+      height: 28px;
+   }
+   .subscribe-close-btn {
+   }
+   .btn-close {
+   }
+   .modal-scroll {
+   }
+   .subscribe-modal-bg {
+   }
+   .subscribe-form-title {
+      font-size: 24px;
+      line-height: 28px;
+      width: 320px;
+      margin-top: 40px;
+   
+   }
+   .subscribe-form-title-color {
+   }
+   .subscribe-form-items {
+   }
+   .subcribe-text-input {
+      display: inline-block;
+      margin-top: 40px;
+      width: 310px;
+      height: 52px;
+   }
+   .subscribe-form-send {
+      display: inline-block;
+      margin-top: 40px;
+      margin-left: 19px;
+      padding: 16px 42px;
    }
 }
