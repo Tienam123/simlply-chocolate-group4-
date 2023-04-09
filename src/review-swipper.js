@@ -1,4 +1,4 @@
-new Swiper('.swiper-container', {
+new Swiper('.slider', {
    direction: 'horizontal',
    slidesPerView: '1',
    // loop: true,
