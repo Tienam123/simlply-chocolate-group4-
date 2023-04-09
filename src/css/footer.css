@@ -144,11 +144,7 @@
    .contact-and-soc-media {
       flex-wrap: nowrap;
    }
-   /* .footer-social-media-item {
-      margin-right: 17px;
-      margin-left: 0;
-   } */
-   .footer-social-media-link {
+      .footer-social-media-link {
       transition: var(--animation);
    }
 
