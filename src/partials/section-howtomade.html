@@ -30,32 +30,36 @@
                class="howtomade-img"
                src="./img/howmade/video-wpapper-desktop-x1.jpg"
                alt="making-chocolate-photo"
+               id="my-image"
                width="600"
                height="400"
             />
-            <svg class="howtomade-icon-wrap-mobile" width="35" height="35">
-               <use
-                  href="./img/icons/play-mobile.svg#play-mobile"
-                  class="howtomade-icon-mobile"
-               ></use>
-            </svg>
-            <svg class="howtomade-icon-wrap" width="44" height="44">
-               <use
-                  href="./img/icons/play.svg#play"
-                  class="howtomade-icon"
-               ></use>
-            </svg>
-            <!-- <iframe
+            <button class="howtomade-video-btn" type="button" id="button-id">
+               <svg class="howtomade-icon-wrap" width="44" height="44">
+                  <use
+                     href="./img/icons/play.svg#play"
+                     class="howtomade-icon"
+                  ></use>
+               </svg>
+               <svg class="howtomade-icon-wrap-mobile" width="35" height="35">
+                  <use
+                     href="./img/icons/play-mobile.svg#play-mobile"
+                     class="howtomade-icon-mobile"
+                  ></use>
+               </svg>
+            </button>
+            <iframe
                class="howtomade-video"
-               id="video-iframe"
                width="600"
                height="400"
                src="https://www.youtube.com/embed/41UbWmXKWkc"
-               title="YouTube video player"
+               title="how-handmade-chocolate-is-made"
+               id="iframe-id"
+               name="howtomade_iframe_video"
                frameborder="0"
                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                allowfullscreen
-            ></iframe> -->
+            ></iframe>
          </picture>
          <div class="howtomade-desc-wrap">
             <h3 class="howtomade-subtitle">
@@ -63,7 +67,7 @@
                flavor
             </h3>
             <ul class="howtomade-list">
-               <li type="disc" class="howtomade-item">
+               <li class="howtomade-item">
                   <p class="howtomade-item-text">
                      Heat the milk in a saucepan without bringing it to a boil.
                      Add sugar and cocoa powder.
