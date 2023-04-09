@@ -1,14 +1,21 @@
-var swiper = new Swiper('.swiper-product', {
-   slidesPerView: '1',
-   // loop: true,
+new Swiper('.swiper-product', {
+   slidesPerView: 1,
+   loop: true,
+   speed: 600,
    spaceBetween: 18,
    grabCursor: true,
    simulateTouch: true,
    touchRatio: 2,
-   // freeMode: true,
+   mousewheel: {
+      sensitivity: 1,
+   },
    pagination: {
       el: '.swiper-pagination',
       clickable: true,
+   },
+   keyboard: {
+      enabled: true,
+      onlyInViewport: true,
    },
    breakpoints: {
       768: {
