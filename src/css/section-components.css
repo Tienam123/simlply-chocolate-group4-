@@ -26,11 +26,6 @@ padding-bottom: 36px;
 color: var(--Orange);
 }
 .component-sub-text {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
     letter-spacing: -0.02em;
     color: var(--dark);
     margin-bottom: 32px;
@@ -66,11 +61,10 @@ color: var(--Orange);
     flex-direction: column;
     row-gap: 25px;
     justify-content: center;
-   align-items: center;
+    align-items: center;
 }
 
 .component-cards-img-row {
-   
    width: 224px;
    height: 171px;
 }
@@ -83,7 +77,6 @@ color: var(--Orange);
         line-height: 1.29;
         letter-spacing: -0.02em;
         text-transform: uppercase;
-        color: var(--dark);
         position: absolute;
         left: 28px;
         bottom: 28px;
@@ -137,8 +130,7 @@ color: var(--Orange);
     letter-spacing: -0.03em;
     text-transform: uppercase;
     margin-bottom: 8px;
-    color: var(--dark);
-}
+   }
 
 .component-label {
     display: flex;
@@ -152,9 +144,6 @@ color: var(--Orange);
     display: flex;
     flex-direction: row;
     row-gap: 10px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 10px;
     line-height: 1.2;
     color: var(--Main-white);
@@ -165,12 +154,8 @@ color: var(--Orange);
 
 .component-label-ben-text {
     display: flex;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 10px;
     line-height: 1.2;
-    color: var(--dark);
     background-color: var(--background-active-button);
     margin-left: 10px;
     border: 1px solid var(--Orange);
@@ -179,13 +164,7 @@ color: var(--Orange);
 }
 
 .component-text {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.28;
     letter-spacing: -0.02em;
-    color: var(--dark);
 }
 
 
@@ -223,9 +202,9 @@ color: var(--Orange);
         justify-content: space-between;
     }
  
-   .list-item {
-   order: 1;
-   }
+    .list-item {
+        order: 1;
+    }
 }
 
 @media screen and (min-width:1200px) {
@@ -243,15 +222,13 @@ color: var(--Orange);
      }
        
     .overlay {
-        padding: 14px;
+        padding: 13px;
         overflow-y: scroll;
-        scroll-snap-align: start;
+        /* scroll-snap-align: start; */
     }
 
     ::-webkit-scrollbar {
         width: 1px;
-        /* scroll-behavior: smooth; */
-        /* background-color: inherit; */
     }
    
     .component-cards-img {
