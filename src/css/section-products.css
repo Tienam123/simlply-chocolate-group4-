@@ -36,7 +36,7 @@
    width: 100%;
    background-color: var(--Main-white);
    text-align: center;
-   border: 1px solid rgba(17, 17, 17, 0.1);
+   border: 1px solid var(--product-main-background);
    border-radius: 15px;
 }
 
@@ -80,6 +80,14 @@
    border: 1px solid var(--product-main-background);
    border-radius: 100px;
    cursor: pointer;
+}
+
+.product-item-btn:is(:hover, :focus) {
+   border: 1px solid var(--product-main-background);
+}
+
+.product-item-btn:active {
+   transform: translateY(1px);
 }
 
 .section-product .swiper-pagination {
