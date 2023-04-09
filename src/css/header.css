@@ -54,6 +54,7 @@
 }
 .nav-menu-item {
    position: relative;
+   padding: 2px;
 }
 
 .nav-menu-link {
@@ -195,16 +196,16 @@
       width: 47px;
    }
    .nav-menu-item:nth-child(2) {
-      width: 105px;
+      width: 110px;
    }
    .nav-menu-item:nth-child(3) {
-      width: 92px;
+      width: 97px;
    }
    .nav-menu-item:nth-child(4) {
-      width: 72px;
+      width: 77px;
    }
    .nav-menu-item:nth-child(5) {
-      width: 124px;
+      width: 128px;
    }
    .nav-menu-link {
       width: 140px;
@@ -221,7 +222,7 @@
       height: 2px;
       left: 0;
       bottom: 0;
-      transform: translateX(-102%);
+      transform: translateX(-110%);
       transition: all 500ms linear;
    }
    .nav-menu-link:hover::after {
@@ -322,9 +323,12 @@
    }
    .nav-menu-link-desktop {
       padding: 3px 2px;
+      transition: all var(--animation);
    }
 
-   .nav-menu-link-desktop:focus {
+   .nav-menu-link-desktop:focus,
+   .nav-menu-link-desktop:hover {
+      color: var(--Orange);
       
    }
 

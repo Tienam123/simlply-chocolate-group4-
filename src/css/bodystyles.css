@@ -56,23 +56,52 @@ section.products button:focus {
 }
 
 .button-orange {
-  box-shadow: 0px 0 0 0, 0px 0px 0px 0px rgba(255, 166, 0, 0.686);
-  transition: all 250ms linear;
+  
 }
 
-.button-orange:hover {
+.button-orange:hover,
+.button-orange:focus {
   color:orange;
   background-color: #fff;
-  box-shadow: 0px 0 0 0, 3px 2px 1px 1px #ffffffab;
+  transform: translate(0,-5px);
+  box-shadow: 2px 5px 4px orange;
 }
 
 .button-orange:active {
-  box-shadow: 0px 0 0 0, 2px 1px 1px 1px #ffffffab;
+  transform: translate(0,-2px);
+  box-shadow: 3px 2px 4px orange;
 }
 
 
+.scroll-down-button:hover  {
+  transform: translate(0,-3px);
+  text-shadow: 3px 2px 4px orange;
 
+}
 
+.scroll-down-button:hover .scroll-down-icon {
+  transform: translate(0,-3px);
+  box-shadow: 3px 2px 4px orange;
+}
+.scroll-down-button:active {
+  transform: translate(0,-1px);
+  text-shadow: 3px 2px 4px orange;
+}
+
+.scroll-down-button:active .scroll-down-icon {
+  transform: translate(0,-1px);
+  box-shadow: 3px 2px 4px orange;
+}
+
+.how-its-made-button:hover {
+  transform: translate(0,-5px);
+  box-shadow: 4px 3px 4px orange;
+}
+
+.how-its-made-button:active {
+  transform: translate(0,-2px);
+  box-shadow: 3px 2px 4px orange;
+}
 
 
 
