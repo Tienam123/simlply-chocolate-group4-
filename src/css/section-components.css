@@ -243,13 +243,14 @@ color: var(--Orange);
      }
        
     .overlay {
-        padding: 18px;
+        padding: 14px;
         overflow-y: scroll;
+        scroll-snap-align: start;
     }
 
     ::-webkit-scrollbar {
-        width: 2px;
-        scroll-behavior: smooth;
+        width: 1px;
+        /* scroll-behavior: smooth; */
         /* background-color: inherit; */
     }
    
