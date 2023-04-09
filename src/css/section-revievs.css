@@ -52,9 +52,8 @@
     border: 1px solid rgba(17, 17, 17, 0.1);
     box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
     border-radius: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     height: 200px;
-    /* margin-bottom: 50px; необходимо исправить */
 }
 
 .review-cards-foto {
@@ -63,14 +62,6 @@
     left: 50%;
     z-index: 99;
     transform: translate(-50%);
-}
-/* .swiper-review {
-    overflow: hidden;
-} */
-
-.review .swiper-pagination {
-    position: relative;
-    margin-bottom: 32px;
 }
 
 .review .swiper-pagination-bullet {
@@ -90,6 +81,11 @@
 
 .review .swiper-pagination-bullets {
     margin: 0 13px;
+}
+
+.review .swiper-pagination {
+    position: relative;
+    margin-bottom: 32px;
 }
 
 .review-btn {
@@ -115,13 +111,6 @@
     }
 }
 
-/*!##################### 375px-767px ########################### */
-@media screen and (min-width: 375px) {
-
-}
-
-
-
 /* !##################### 768px-1199px ########################### */
 @media screen and (min-width: 768px) {
     .review {
@@ -137,6 +126,9 @@
     }
     .review .swiper-pagination {
         margin-bottom: 50px;}
+    .review-cards {
+        margin-bottom: 50px;
+    }
 }
 
 
