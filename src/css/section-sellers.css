@@ -35,7 +35,7 @@
    border-radius: 15px;
 }
 .sellers-list-item.image {
-   transform: scale(1);   
+   transform: scale(1);
    transition: transform 1000ms linear;
 }
 .sellers-list-item.image:hover {
@@ -80,7 +80,7 @@
 @media screen and (min-width: 768px) {
    .sellers-section {
       padding-top: 100px;
-   } 
+   }
    .sellers-title {
       font-size: 24px;
       line-height: 1.17;
@@ -371,21 +371,18 @@ html.is-active {
    margin-bottom: 40px;
    text-shadow: 4px 4px 10px var(--dark);
 }
-.reviews-send-link {
-   margin-left: auto;
-}
+
 .reviews-send-two-btn {
-   padding: 8px 15px;
-   border-radius: 100px;
-   background-color: transparent;
-   border: none;
+   margin-left: auto;
    font-weight: 700;
    font-size: 20px;
    text-transform: uppercase;
    text-shadow: 2px 2px var(--Orange);
+   padding: 14px 40px;
+   border-radius: 100px;
    transition: color var(--animation), text-shadow var(--animation);
 }
-.reviews-send-two-btn:is(:hover, :focus) {
+.reviews-send-two-btn:is(:hover, :focus) {   
    color: var(--Orange);
    text-shadow: 2px 2px var(--dark);
 }
