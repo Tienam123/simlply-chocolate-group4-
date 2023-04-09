@@ -329,21 +329,6 @@
    }
 
 
-:focus {
-   outline: 1px solid var(--Orange);
-      border-radius: 4px;
-      outline-offset: 0;
-}
-section.hero a:focus {
-   outline: 1px solid var(--Orange);
-      border-radius: 100px;
-      outline-offset: 0;
-}
-section.products button:focus {
-   outline: 0;
-   border-radius: 4px;
-   outline-offset: 0;
-}
 
 
    .nav-link-line-desktop {
