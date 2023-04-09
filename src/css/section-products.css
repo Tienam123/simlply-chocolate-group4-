@@ -41,9 +41,6 @@
 }
 
 .section-product-item img {
-   display: block;
-   max-width: 100%;
-   height: auto;
    margin: 0 auto 8px;
    transition: transform var(--animation);
 }
@@ -64,6 +61,7 @@
    line-height: 1.17;
    color: rgba(17, 17, 17, 0.7);
 }
+
 .product-item-btn {
    margin-top: 18px;
    display: inline-block;
