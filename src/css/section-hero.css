@@ -216,7 +216,7 @@ screen and (min-resolution: 2dppx) {
    }
 }
 
-/* DESCTOP */
+/* DESKTOP */
 @media screen and (min-width: 1200px) {
    .hero-wraper {
       padding-top: 381px;
