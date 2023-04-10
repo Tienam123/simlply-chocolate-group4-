@@ -80,7 +80,7 @@ h3 {
       height: 62px;
       border: 1px solid rgba(255, 255, 255, 0.5);
       border-radius: 365px;
-      margin: 20px 0;
+      margin: 0 0 20px 0;
    }
 
    .benefits-list li:not(:first-child) {
@@ -88,7 +88,18 @@ h3 {
    }
 }
 
+
+@media screen and (max-width: 767px) {
+   .benefits {
+      padding: 36px 0;
+   }
+}
+
 @media screen and (min-width: 768px) {
+   .benefits {
+      padding: 85px 0;
+   }
+
    .container-benefits {
       gap: 32px;
 
@@ -117,6 +128,9 @@ h3 {
 }
 
 @media screen and (min-width: 1200px) {
+   .benefits {
+      padding: 51px 0;
+   }
 
    .benefits-item {
       flex-basis: calc((100% - 70px) / 3);

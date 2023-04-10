@@ -169,7 +169,7 @@
       top: 0;
    }
    .menu-container.js-menu-container {
-      position: absolute;
+      position: fixed;
       top: -200%;
       right: 0;
       color: #fff;
@@ -322,7 +322,7 @@
       position: relative;
    }
    .nav-menu-link-desktop {
-      padding: 3px 2px;
+      padding: 2px 2px;
       transition: all var(--animation);
    }
 

@@ -55,6 +55,8 @@ section.products button:focus {
 }
 
 .button-orange {
+  color: #fff;
+  background-color: #fd9222;
   border:1px solid #fafafa;
 }
 
