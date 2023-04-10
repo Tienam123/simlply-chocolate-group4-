@@ -1,109 +1,127 @@
 .container {
-  padding: 0 15px;
-  margin: 0 auto;
-  width: 100%;
+   padding: 0 15px;
+   margin: 0 auto;
+   width: 100%;
 }
 
 body {
-font-family: 'Montserrat';
-font-size: 14px;
-line-height: 1.28;
-letter-spacing: -0.02em;
-color: var(--dark);
-background-color: #E2E2E2;
+   font-family: 'Montserrat';
+   font-size: 14px;
+   line-height: 1.28;
+   letter-spacing: -0.02em;
+   color: var(--dark);
+   background-color: #fafafa;
 }
 
-@media screen and (max-width:374px) {
-  .container {
-    max-width: 365px;
-    
-  }  
+@media screen and (max-width: 374px) {
+   .container {
+      max-width: 365px;
+   }
 }
-@media screen and (min-width:375px) and (max-width:767px) {
-  .container {
-    max-width: 365px;
-    
-  }  
+@media screen and (min-width: 375px) and (max-width: 767px) {
+   .container {
+      max-width: 365px;
+   }
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
-  .container {
-    max-width:734px;
-  }  
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+   .container {
+      max-width: 734px;
+   }
 }
 
-@media screen and (min-width:1200px) {
-  .container {
-    max-width:1166px;
-  }  
-}
-
-
+@media screen and (min-width: 1200px) {
+   .container {
+      max-width: 1166px;
+   }
+   
 :focus {
   outline: 1px solid var(--Orange);
-     border-radius: 4px;
-     outline-offset: 0;
-}
-section.hero a:focus {
-  outline: 1px solid var(--Orange);
-     border-radius: 100px;
-     outline-offset: 0;
-}
-section.products button:focus {
-  outline: 0;
   border-radius: 4px;
   outline-offset: 0;
 }
+}
+
+
+section.hero a:focus {
+   outline: 1px solid var(--Orange);
+   border-radius: 100px;
+   outline-offset: 0;
+}
+section.products button:focus {
+   outline: 0;
+   border-radius: 4px;
+   outline-offset: 0;
+}
 
 .button-orange {
-  
+  border:1px solid #fafafa;
 }
+
 
 .button-orange:hover,
 .button-orange:focus {
-  color:orange;
-  background-color: #fff;
-  transform: translate(0,-5px);
-  box-shadow: 2px 5px 4px orange;
+   color: orange;
+   background-color: #fff;
+   transform: translate(0, -5px);
+   box-shadow: 2px 5px 4px orange;
 }
 
 .button-orange:active {
-  transform: translate(0,-2px);
-  box-shadow: 3px 2px 4px orange;
+   transform: translate(0, -2px);
+   box-shadow: 3px 2px 4px orange;
 }
 
-
-.scroll-down-button:hover  {
-  transform: translate(0,-3px);
-  text-shadow: 3px 2px 4px orange;
-
+.button-reviev {
+   background-color: transparent;
+   border: 1px solid #fd9222;
+   padding: 14px 40px;
+   border-radius: 100px;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 22px;
+   color: #111111;
 }
 
-.scroll-down-button:hover .scroll-down-icon {
-  transform: translate(0,-3px);
-  box-shadow: 3px 2px 4px orange;
+.scroll-down-button:hover,
+.scroll-down-button:focus {
+   transform: translate(0, -3px);
+   text-shadow: 3px 2px 4px orange;
+}
+
+.scroll-down-button:hover .scroll-down-icon,
+.scroll-down-button:focus .scroll-down-icon {
+   transform: translate(0, -3px);
+   box-shadow: 3px 2px 4px orange;
 }
 .scroll-down-button:active {
-  transform: translate(0,-1px);
-  text-shadow: 3px 2px 4px orange;
+   transform: translate(0, -1px);
+   text-shadow: 3px 2px 4px orange;
 }
 
-.scroll-down-button:active .scroll-down-icon {
-  transform: translate(0,-1px);
-  box-shadow: 3px 2px 4px orange;
+.scroll-down-button:active .scroll-down-icon,
+.scroll-down-button:focus .scroll-down-icon {
+   transform: translate(0, -1px);
+   box-shadow: 3px 2px 4px orange;
 }
 
-.how-its-made-button:hover {
-  transform: translate(0,-5px);
-  box-shadow: 4px 3px 4px orange;
+.how-its-made-button:hover,
+.how-its-made-button:focus {
+   transform: translate(0, -5px);
+   box-shadow: 4px 3px 4px orange;
 }
 
 .how-its-made-button:active {
-  transform: translate(0,-2px);
-  box-shadow: 3px 2px 4px orange;
+   transform: translate(0, -2px);
+   box-shadow: 3px 2px 4px orange;
+}
+.button-reviev.how-its-made-button {
+  border: 1px solid orange;
+  
 }
 
-
-
-
-
+button.button-reviev.how-its-made-button {
+  margin: 0 auto;
+ text-align: center;
+ display: block;
+}

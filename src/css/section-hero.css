@@ -79,11 +79,7 @@ screen and (min-resolution: 2dppx) {
    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.buy-now-button:hover,
-.buy-now-button:focus {
-   background: #FCF1E0;
-   color: var(--Orange);
-}
+
 
 
 .how-its-made-button {
@@ -107,7 +103,7 @@ screen and (min-resolution: 2dppx) {
    line-height: 1.17;
    letter-spacing: -0.03em;
    color: #ffffff;
-
+   padding: 5px 10px;
    display: flex;
    align-items: center;
    gap: 12px;
