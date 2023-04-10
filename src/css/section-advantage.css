@@ -32,6 +32,8 @@ ul {
    font-size: 18px;
    line-height: 1.2;
    color: white;
+   margin-bottom: 18px;
+   margin-top: 22px;
 }
 .advent-p {
    font-family: 'Montserrat';
@@ -72,6 +74,7 @@ ul {
       display: flex;
       justify-content: flex-start;
       align-items: center;
+
    }
    .svg-wrap {
       width: 62px;
