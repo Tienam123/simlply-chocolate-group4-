@@ -47,6 +47,8 @@
    margin-right: auto;
 }
 
+/* ========================= max-767px ======================= */
+
 @media screen and (max-width: 767px) {
    .sellers-container {
       margin-left: auto;
@@ -67,15 +69,20 @@
    .sellers-list-item:nth-child(5) {
       order: 2;
    }
-   .revievs-title {
+   .reviews-title {
       max-width: 255px;
    }
 }
+
+/* ======================== max-1199px ====================== */
+
 @media screen and (max-width: 1199px) {
    .sellers-list-item:nth-child(3) {
       display: none;
    }
 }
+
+/* ======================== min-768px ====================== */
 
 @media screen and (min-width: 768px) {
    .sellers-section {
@@ -107,6 +114,8 @@
    }
 }
 
+/* ======================== min-1200px ====================== */
+
 @media screen and (min-width: 1200px) {
    .sellers-section {
       padding-top: 128px;
@@ -119,7 +128,7 @@
    }
 }
 
-/* =============================== MODAL WINDOW REVIEVS ================================= */
+/* =============================== MODAL WINDOW REVIEWS ================================= */
 
 .backdrop {
    position: fixed;
@@ -184,39 +193,50 @@ html.is-active {
    line-height: 1.2;
    letter-spacing: -0.03em;
    text-transform: uppercase;
-   color: var(--dark);
    margin-bottom: 32px;
 }
 .reviews-title-text {
    color: var(--Orange);
 }
-.reviews-modal-field {
-   margin-bottom: 19px;
+.reviews-modal-field.item-text {
+   margin-bottom: 14px;
 }
-.reviews-modal-field.phone {
+.reviews-modal-field.item-message {
+   margin-bottom: 18px;
+}
+.reviews-modal-field.item-phone {
    position: relative;
 }
 .reviews-form-input {
    width: 100%;
    height: 45px;
-   padding: 10px 18px;
+   padding: 14px 18px;
    border: 1.5px solid rgba(17, 17, 17, 0.05);
-
    border-radius: 13px;
    background-color: transparent;
-
    transition: border var(--animation);
 }
 .reviews-form-input:is(:hover, :focus) {
    border: 2px solid var(--Orange);
    outline: transparent;
 }
+.reviews-form-input::placeholder {
+   font-size: 14px;
+   line-height: 1.21;
+   letter-spacing: -0.02em;
+   /* color: rgba(64, 64, 64, 0.3); */
 
+   transition: color var(--animation);
+}
+.reviews-form-input:focus::placeholder,
+.reviews-form-input:hover::placeholder {
+   color: var(--Orange);
+}
 .reviews-code {
    padding: 4px 8px;
 }
 .reviews-form-input.phone {
-   padding-left: 106px;
+   padding: 10px 18px 10px 106px;
 }
 .reviews-phone-code {
    display: flex;
@@ -250,7 +270,6 @@ html.is-active {
    background-color: var(--Orange);
    border-radius: 100px;
    border: transparent;
-
    font-weight: 600;
    font-size: 14px;
    line-height: 1.21;
@@ -263,18 +282,8 @@ html.is-active {
    color: var(--Orange);
    outline: transparent;
 }
-.reviews-form-input::placeholder {
-   font-size: 14px;
-   line-height: 1.21;
-   letter-spacing: -0.02em;
-   color: rgba(64, 64, 64, 0.3);
 
-   transition: color var(--animation);
-}
-.reviews-form-input:focus::placeholder,
-.reviews-form-input:hover::placeholder {
-   color: var(--Orange);
-}
+/* ======================== min-768px ====================== */
 
 @media screen and (min-width: 768px) {
    .modal-reviews {
@@ -292,13 +301,12 @@ html.is-active {
       line-height: 1.17;
       margin-bottom: 40px;
    }
-   /* .revievs-send-btn-icon {
-      width: 14px;
-      height: 14px;
-   } */
+   .reviews-modal-field.item-text {
+      margin-bottom: 19px;
+   }
    .reviews-form-input {
       height: 66px;
-      padding: 24px 22px;
+      padding: 22px 24px;
    }
    .reviews-form-input-message {
       height: 137px;
@@ -316,16 +324,26 @@ html.is-active {
       line-height: 1.22;
    }
    .reviews-form-input.phone {
-      padding-left: 140px;
+      padding: 17px 24px 17px 140px;
+   }
+   .reviews-send-btn{
+      padding: 14px 40px;
    }
 }
+
+/* ======================== min-1200px ====================== */
+
 @media screen and (min-width: 1200px) {
    .modal-reviews {
       padding: 45px 40px 40px;
    }
+   .reviews-title{
+      margin-bottom: 35px;
+   }
 }
 
 /* ===================================== NEW MODAL ==================================== */
+
 .backdrop {
    position: fixed;
    top: 0;
@@ -382,7 +400,8 @@ html.is-active {
    border-radius: 100px;
    transition: color var(--animation), text-shadow var(--animation);
 }
-.reviews-send-two-btn:is(:hover, :focus) {   
+.reviews-send-two-btn:is(:hover, :focus) {
+   outline: transparent;
    color: var(--Orange);
    text-shadow: 2px 2px var(--dark);
 }
