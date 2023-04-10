@@ -29,26 +29,21 @@
 .subscribe-title {
    margin-right: auto;
    margin-left: auto;
-
-   width: 291px;
+   max-width: 291px;
    font-weight: 600;
    font-size: 20px;
    line-height: 1.2;
    text-align: center;
-
+   letter-spacing: -0.03em;
    text-transform: uppercase;
-
    color: var(--Main-white);
 }
 
 .subscribe-text {
    margin: 24px auto;
-   font-size: 14px;
+   max-width: 326px;
    line-height: 1.2;
-
    text-align: center;
-   letter-spacing: -0.02em;
-
    color: var(--Main-white);
 }
 
@@ -78,7 +73,12 @@
 /* MOBILE */
 @media screen and (min-width: 375px) and (max-width: 767px) {
    .subscribe-text {
-      width: 326px;
+      max-width: 326px;
+   }
+   .subscribe-title {
+      font-weight: 600;
+      font-size: 20px;
+      max-width: 291px;
    }
 
    @media screen and (min-device-pixel-ratio: 2),
@@ -121,11 +121,18 @@
       }
 
       .container-subscribe {
-         padding: 72px 24px;
+         padding: 72px 151px;
       }
       .subscribe-title {
+         max-width: 378px;
          font-size: 24px;
+         font-weight: 600;
          line-height: 1.16;
+         letter-spacing: -0.03em;
+         text-transform: uppercase;
+      }
+      .subscribe-text {
+         max-width: 467px;
       }
    }
 }
@@ -161,20 +168,24 @@
    }
 
    .container-subscribe {
-      padding: 72px 24px;
+      padding: 72px 367px;
    }
 
    .subscribe-title {
+      max-width: 378px;
+      font-weight: 600;
       font-size: 24px;
       line-height: 1.16;
-
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
       text-align: center;
    }
 
    .subscribe-text {
-      width: 467px;
+      max-width: 467px;
+      width: 100%;
       text-align: center;
-      letter-spacing: -0.02em;
+      line-height: 1.2;
    }
 }
 
