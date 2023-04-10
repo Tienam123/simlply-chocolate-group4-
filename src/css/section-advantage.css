@@ -32,6 +32,8 @@ ul {
    font-size: 18px;
    line-height: 1.2;
    color: white;
+   margin-bottom: 18px;
+   margin-top: 22px;
 }
 .advent-p {
    font-family: 'Montserrat';
@@ -53,9 +55,7 @@ ul {
    justify-content: center;
    align-items: center;
 }
-h3 {
-   margin-bottom: 18px;
-}
+
 
 @media screen and (min-width: 375px) {
    .container-benefits {
@@ -74,6 +74,7 @@ h3 {
       display: flex;
       justify-content: flex-start;
       align-items: center;
+
    }
    .svg-wrap {
       width: 62px;
