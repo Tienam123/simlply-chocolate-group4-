@@ -59,8 +59,7 @@ ul {
 
 @media screen and (min-width: 375px) {
    .container-benefits {
-      min-width: 335px;
-      padding: 20px;
+
    }
 
    .benefits-list {
@@ -68,21 +67,21 @@ ul {
    }
 
    .benefits-item {
-      padding: 0px 28px 0px 0px;
+     
    }
 
    .benefits-title {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      
+
    }
    .svg-wrap {
       width: 62px;
       height: 62px;
       border: 1px solid rgba(255, 255, 255, 0.5);
       border-radius: 365px;
-      margin: 20px 0;
+      margin: 0 0 20px 0;
    }
 
    .benefits-list li:not(:first-child) {
@@ -90,10 +89,19 @@ ul {
    }
 }
 
+
+@media screen and (max-width: 767px) {
+   .benefits {
+      padding: 36px 0;
+   }
+}
+
 @media screen and (min-width: 768px) {
+   .benefits {
+      padding: 85px 0;
+   }
+
    .container-benefits {
-      min-width: 704px;
-      padding: 50px 32px;
       gap: 32px;
 
       display: flex;
@@ -121,16 +129,14 @@ ul {
 }
 
 @media screen and (min-width: 1200px) {
-   .container-benefits {
-      min-width: 1100px;
-      padding: 50px 50px;
+   .benefits {
+      padding: 51px 0;
    }
 
    .benefits-item {
       flex-basis: calc((100% - 70px) / 3);
       justify-content: center;
       align-items: flex-start;
-      padding: 0px;
       gap: 70px;
    }
 

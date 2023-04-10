@@ -1,0 +1,140 @@
+.section-product {
+   padding-top: 72px;
+}
+
+.container-product {
+   overflow: hidden;
+}
+
+.section-product-item {
+   max-width: 100%;
+}
+
+.section-product-title {
+   margin-bottom: 32px;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 1.2;
+   text-align: center;
+   letter-spacing: -0.03em;
+   text-transform: uppercase;
+}
+
+.section-product-title span {
+   color: var(--Orange);
+}
+
+.section-product-list {
+   display: flex;
+   align-items: center;
+}
+
+.section-product-item {
+   margin-bottom: 20px;
+   flex-shrink: 0;
+   padding: 32px 0;
+   width: 100%;
+   background-color: var(--Main-white);
+   text-align: center;
+   border: 1px solid var(--product-main-background);
+   border-radius: 15px;
+}
+
+.section-product-item:is(:hover, :focus) {
+   box-shadow: 0px 0px 10px 0px rgba(253, 146, 34, 0.2);
+}
+
+.section-product-item img {
+   margin: 0 auto 8px;
+   transition: transform var(--animation);
+}
+
+.section-product-item:is(:hover, :focus) img {
+   transform: scale(1.1);
+}
+
+.product-item-title {
+   margin-bottom: 2px;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 1.33;
+   text-transform: uppercase;
+}
+
+.product-item-description {
+   line-height: 1.17;
+   color: rgba(17, 17, 17, 0.7);
+}
+
+.product-item-btn {
+   margin-top: 18px;
+   display: inline-block;
+   min-width: 94px;
+   max-height: 33px;
+   padding: 8px 20px;
+   font-family: inherit;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 1.21;
+   background-color: var(--background-active-button);
+   border: 1px solid var(--product-main-background);
+   border-radius: 100px;
+   cursor: pointer;
+}
+
+.product-item-btn:active {
+   transform: translateY(1px);
+}
+
+.section-product .swiper-pagination {
+   position: relative;
+}
+
+.section-product .swiper-pagination-bullet {
+   width: 13px;
+   height: 13px;
+   margin-right: 13px;
+   background-color: var(--product-main-background);
+   transition: background-color var(--animation);
+}
+
+.section-product .swiper-pagination-bullet-active {
+   width: 28px;
+   border-radius: 20px;
+   background-color: var(--Orange);
+   color: var(--Orange);
+}
+
+.section-product .swiper-pagination-bullets {
+   margin: 0 13px;
+}
+
+@media screen and (min-width: 768px) {
+   .section-product {
+      padding-top: 100px;
+   }
+
+   .section-product-title {
+      margin-bottom: 50px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 1.17;
+   }
+
+   .section-product-item {
+      margin-bottom: 32px;
+      max-width: 270px;
+   }
+
+   .section-product-list {
+      width: 100%;
+      height: 100%;
+      box-sizing: content-box;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   .section-product {
+      padding-top: 128px;
+   }
+}
