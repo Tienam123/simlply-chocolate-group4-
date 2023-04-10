@@ -55,6 +55,7 @@ ul {
 }
 h3 {
    margin-bottom: 18px;
+   margin-top: 22px;
 }
 
 @media screen and (min-width: 375px) {
@@ -75,7 +76,7 @@ h3 {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      padding-bottom: 18px;
+      
    }
    .svg-wrap {
       width: 62px;
