@@ -10,6 +10,10 @@ new Swiper('.slider', {
       el: '.swiper-pagination',
       clickable: true,
    },
+   keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+   },
    breakpoints: {
       768: {
          spaceBetween: 28,
