@@ -1,0 +1,239 @@
+.hero-wraper {
+   padding-top: 395px;
+   padding-bottom: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+   border-radius: 30px;
+   background-color: var(--dark-violet);
+   background-image: linear-gradient(180deg,
+         rgba(17, 17, 17, 0) 0%,
+         rgba(17, 17, 17, 0.4) 100%),
+      url(../img/hero/hero-bc-mobile-x1.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+   .hero-wraper {
+      background-image: linear-gradient(180deg,
+            rgba(17, 17, 17, 0) 0%,
+            rgba(17, 17, 17, 0.4) 100%),
+         url(../img/hero/hero-bc-mobile-x2.jpg);
+   }
+}
+
+.hero {
+   padding-bottom: 72px;
+}
+
+.hero-hidden-title {
+   position: absolute;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+   width: 1px;
+}
+
+.hero-subtitle {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.2;
+   letter-spacing: -0.03em;
+   color: #ffffff;
+   text-align: start;
+   margin-bottom: 32px;
+}
+
+.hero-buttons {
+   display: flex;
+   justify-content: start;
+   gap: 14px;
+   margin-bottom: 32px;
+}
+
+.button {
+   color: #ffffff;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 1.22;
+   background: var(--Orange);
+   border-radius: 100px;
+   padding: 14px 40px;
+   border: transparent;
+   text-align: center;
+}
+
+.buy-now-button {
+   padding: 12px 28px;
+   border-radius: 100px;
+
+   transition: var(--animation);
+}
+
+
+
+
+.how-its-made-button {
+   padding: 12px 28px;
+   border: 1px solid #ffffff;
+   border-radius: 100px;
+   background: none;
+
+   transition: var(--animation);
+}
+
+.how-its-made-button:hover,
+.how-its-made-button:focus {
+   border: 1px solid var(--Orange);
+   color: var(--Orange);
+}
+
+.scroll-down-button {
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 1.17;
+   letter-spacing: -0.03em;
+   color: #ffffff;
+   padding: 5px 10px;
+   display: flex;
+   align-items: center;
+   gap: 12px;
+
+   transition: var(--animation);
+}
+
+.scroll-down-icon {
+   width: 28px;
+   height: 28px;
+   fill: var(--Orange);
+   background-color: #ffffff;
+   border-radius: 50%;
+
+   transition: var(--animation);
+}
+
+.scroll-down-button:hover,
+.scroll-down-button:focus {
+   color: var(--Orange);
+}
+
+.scroll-down-button:hover .scroll-down-icon,
+.scroll-down-button:focus .scroll-down-icon {
+   background-color: var(--Orange);
+   fill: #ffffff;
+}
+
+
+
+/* MOBILE SMALL */
+@media screen and (max-width: 374px) {
+   .hero-subtitle {
+      max-width: 295px;
+   }
+
+   .hero-buttons {
+      flex-direction: column;
+   }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+   .hero {
+      padding-bottom: 50px;
+   }
+
+   .hero-subtitle {
+      font-size: 28px;
+      width: 484px;
+   }
+
+   .buy-now-button {
+      padding: 14px 40px;
+      min-width: 144px;
+   }
+
+   .how-its-made-button {
+      padding: 14px 40px;
+      min-width: 183px;
+   }
+
+   .hero-buttons {
+      margin-bottom: 0;
+   }
+
+   .hero-actions {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .scroll-down-button {
+      font-size: 14px;
+      line-height: 1.29;
+   }
+
+   .scroll-down-button {
+      gap: 14px;
+   }
+
+   .scroll-down-icon {
+      width: 38px;
+      height: 38px;
+   }
+
+   .hero-wraper {
+      padding-top: 671px;
+      padding-right: 40px;
+      padding-bottom: 40px;
+      padding-left: 40px;
+      background-image: linear-gradient(180deg,
+            rgba(17, 17, 17, 0) 0%,
+            rgba(17, 17, 17, 0.4) 100%),
+         url(/img/hero/hero-bc-tablet-x1.jpg);
+   }
+
+   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+   screen and (min-resolution: 192dpi) and (min-width: 768px),
+   screen and (min-resolution: 2dppx) and (min-width: 768px) {
+      .hero-wraper {
+         background-image: linear-gradient(180deg,
+               rgba(17, 17, 17, 0) 0%,
+               rgba(17, 17, 17, 0.4) 100%),
+            url(/img/hero/hero-bc-tablet-x2.jpg);
+      }
+   }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+   .hero-wraper {
+      padding-top: 381px;
+      background-image: linear-gradient(180deg,
+            rgba(17, 17, 17, 0) 0%,
+            rgba(17, 17, 17, 0.4) 100%),
+         url(/img/hero/hero-bc-desktop-x1.jpg);
+   }
+
+   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+   screen and (min-resolution: 192dpi) and (min-width: 768px),
+   screen and (min-resolution: 2dppx) and (min-width: 768px) {
+      .hero-wraper {
+         background-image: linear-gradient(180deg,
+               rgba(17, 17, 17, 0) 0%,
+               rgba(17, 17, 17, 0.4) 100%),
+            url(/img/hero/hero-bc-desktop-x2.jpg);
+      }
+   }
+
+   .hero {
+      padding-bottom: 72px;
+   }
+}
