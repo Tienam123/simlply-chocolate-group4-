@@ -16,7 +16,12 @@
       z-index: 11;
    }
    .howtomade-video-btn {
-   padding: 2px 2px;
+      width: 35px;
+      height: 35px;
+      background-color: transparent;
+      border-radius: 50%;
+      outline: none;
+      border: none;
    }
    .howtomade-icon-mobile {
       stroke: #fff;
@@ -57,7 +62,7 @@
    margin-bottom: 32px;
 }
 .howtomade-title-span {
-   color: #fd9222;
+   color: var(--Orange);
 }
 .howtomade-wrapper {
    display: flex;
@@ -72,20 +77,23 @@
    border-radius: 15px;
    z-index: 11;
 }
+.hidden {
+   display: none;
+}
 .howtomade-video {
    position: absolute;
    top: 0;
    left: 0;
    border-radius: 15px;
-   border:2px solid #fd9222;
+   border: 2px solid var(--Orange);
    width: 100%;
    max-width: 335px;
    height: 100%;
-   z-index: 1;
+   z-index: 10;
 }
 .howtomade-desc-wrap {
    padding: 20px 14px;
-   background-color: #ffffff;
+   background-color: var(--Main-white);
    border-radius: 15px;
 }
 .howtomade-subtitle {
@@ -135,8 +143,17 @@
       transform: translate(-50%, -50%);
       z-index: 11;
    }
+   .howtomade-video-btn {
+      width: 44px;
+      height: 44px;
+      background-color: transparent;
+      border-radius: 50%;
+      outline: none;
+      border: none;
+   }
+
    .howtomade-icon {
-      stroke: #fff;
+      stroke: var(--Main-white);
       fill: none;
    }
    .howtomade-desc-wrap {
