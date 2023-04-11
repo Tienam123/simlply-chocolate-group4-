@@ -56,6 +56,13 @@ ul {
    align-items: center;
 }
 
+.svg-wrap {
+   width: 62px;
+   height: 62px;
+   border: 1px solid rgba(255, 255, 255, 0.5);
+   border-radius: 365px;
+   margin: 20px 0;
+}
 
 @media screen and (min-width: 375px) {
    .container-benefits {
@@ -77,13 +84,7 @@ ul {
       align-items: center;
       
    }
-   .svg-wrap {
-      width: 62px;
-      height: 62px;
-      border: 1px solid rgba(255, 255, 255, 0.5);
-      border-radius: 365px;
-      margin: 20px 0;
-   }
+  
 
    .benefits-list li:not(:first-child) {
       margin-top: 20px;
