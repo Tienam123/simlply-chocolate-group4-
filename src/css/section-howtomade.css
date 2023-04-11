@@ -1,30 +1,60 @@
-/*!##################### 375px-767px ########################### */
-@media screen and (min-width: 375px) {
+/*!##################### 0px-767px ########################### */
+@media screen and (max-width: 767px) {
+   .howtomade-section {
+      padding-top: 72px;
+   }
+   .howtomade-img,
+   .howtomade-img-wrap {
+      position: relative;
+   }
+   .howtomade-video-btn,
+   .howtomade-icon-wrap-mobile {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 11;
+   }
+   .howtomade-video-btn {
+   padding: 2px 2px;
+   }
+   .howtomade-icon-mobile {
+      stroke: #fff;
+      fill: none;
+   }
+   .howtomade-icon-wrap,
+   .howtomade-icon {
+      display: none;
+   }
 }
+/* !##################### 768px-1199px ########################### */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+   .howtomade-section {
+      padding-top: 100px;
+   }
+   .howtomade-container {
+      max-width: 648px;
+   }
+   .howtomade-img {
+      width: 100%;
+   }
+   .howtomade-list {
+      padding-right: 70px;
+   }
+   .howtomade-desc-wrap {
+      max-width: 614px;
+   }
+}
+/* !##################### 0px-768px ########################### */
 /* ? ======= HOWTOMADE SECTION ====== */
-.howtomade-section {
-   padding-top: 72px;
-   background-color: #e2e2e2;
-   padding-left: 20px;
-   padding-right: 20px;
-}
-.howtomade-container {
-   margin-left: auto;
-   margin-right: auto;
-   max-width: 335px;
-   outline: 2px solid tomato;
-}
 .howtomade-title {
-   font-family: 'Montserrat';
-   font-style: normal;
    font-weight: 600;
    font-size: 24px;
    line-height: 1.17;
    text-align: center;
    letter-spacing: -0.03em;
    text-transform: uppercase;
-   color: #111111;
-   margin-bottom: 50px;
+   margin-bottom: 32px;
 }
 .howtomade-title-span {
    color: #fd9222;
@@ -34,61 +64,34 @@
    flex-wrap: wrap;
    gap: 20px;
 }
-.howtomade-img-wrap{
+.howtomade-img-wrap {
    position: relative;
 }
 .howtomade-img {
-   background-color: linear-gradient(
-         0deg,
-         rgba(0, 0, 0, 0.4),
-         rgba(0, 0, 0, 0.4)
-      ),
-      url(pastry-chef-preparing-chocolate-cake.jpg);
+   position: relative;
    border-radius: 15px;
-}
-.howtomade-icon-link,
-.howtomade-icon-wrap {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   width: 35px;
-   height: 35px;
-   stroke: #fff;
-   fill: tomato;
-   z-index: 10;
+   z-index: 11;
 }
 .howtomade-video {
    position: absolute;
    top: 0;
    left: 0;
    border-radius: 15px;
+   border:2px solid #fd9222;
    width: 100%;
    max-width: 335px;
    height: 100%;
-}
-.howtomade-icon  {
-   width: 35px;
-   height: 35px;
-   stroke: #fff;
-   fill: tomato;
-}
-.howtomade-icon-link:is(:focus, :hover) {
-   cursor: pointer;
+   z-index: 1;
 }
 .howtomade-desc-wrap {
    padding: 20px 14px;
    background-color: #ffffff;
    border-radius: 15px;
-   width: 100%;
 }
 .howtomade-subtitle {
-   font-family: 'Montserrat';
-   font-style: normal;
    font-weight: 600;
    font-size: 18px;
    line-height: 1.33;
-   color: #111111;
    margin-bottom: 28px;
 }
 .howtomade-list {
@@ -101,87 +104,68 @@
    position: relative;
    padding-left: 16px;
 }
-.howtomade-item-ellipse {
+.howtomade-item::before {
+   content: '';
    position: absolute;
    width: 8px;
    height: 8px;
    left: 0px;
-   top: 4px;
-   background: #4c4c4c;
+   top: 5px;
+   background-color: #4c4c4c;
    border: 1px solid #eceded;
    border-radius: 50%;
 }
 .howtomade-item-text {
-   font-family: 'Montserrat';
-   font-style: normal;
-   font-size: 14px;
    line-height: 1.29;
-   letter-spacing: -0.02em;
-   color: #111111;
 }
-
 /* !##################### 768px-1199px ########################### */
 @media screen and (min-width: 768px) {
-   .howtomade-section {
-      padding-top: 100px;
-      background-color: #e2e2e2;
-   }
-   .howtomade-container {
-      max-width: 614px;
-   }
    .howtomade-video {
       max-width: 614px;
+   }
+   .howtomade-icon-wrap-mobile,
+   .howtomade-icon-mobile {
+      display: none;
+   }
+   .howtomade-video-btn,
+   .howtomade-icon-wrap {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 11;
+   }
+   .howtomade-icon {
+      stroke: #fff;
+      fill: none;
    }
    .howtomade-desc-wrap {
       padding: 32px;
    }
+   .howtomade-title {
+      margin-bottom: 50px;
+   }
    .howtomade-subtitle {
       max-width: 350px;
       margin-bottom: 20px;
-   }
-   .howtomade-list {
-      padding-right: 70px;
-   }
-   .howtomade-img {
-      width: 614px;
-   }
-   .howtomade-icon-wrap {
-      width: 44px;
-      height: 44px;
-   }
-   .howtomade-icon  {
-      width: 44px;
-      height: 44px;
    }
 }
 /* !##################### < 1200px ########################### */
 @media screen and (min-width: 1200px) {
    .howtomade-section {
       padding-top: 128px;
-      background-color: #e2e2e2;
-      padding-left: 32px;
-      padding-right: 32px;
-   }
-   .howtomade-container {
-      max-width: 1136px;
    }
    .howtomade-wrapper {
       flex-wrap: nowrap;
    }
    .howtomade-list {
       row-gap: 24px;
-   }
-      .howtomade-list {
-      padding-right: 0;
-      max-width: 452px;
-   }
-   .howtomade-img-wrap{
-      width: 125.27%;
+      padding-right: 26px;
    }
    .howtomade-img {
-      width: 600px;
+      max-width: 600px;
    }
-      .howtomade-video {
+   .howtomade-video {
       max-width: 600px;
    }
 }

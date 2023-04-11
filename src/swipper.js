@@ -9,6 +9,9 @@ new Swiper('.swiper-product', {
    // mousewheel: {
    //    sensitivity: 1,
    // },
+   mousewheel: {
+      sensitivity: 1,
+   },
    pagination: {
       el: '.swiper-pagination',
       clickable: true,

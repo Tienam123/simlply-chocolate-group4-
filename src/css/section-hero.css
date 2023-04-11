@@ -76,14 +76,10 @@ screen and (min-resolution: 2dppx) {
    padding: 12px 28px;
    border-radius: 100px;
 
-   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+   transition: var(--animation);
 }
 
-.buy-now-button:hover,
-.buy-now-button:focus {
-   background: #FCF1E0;
-   color: var(--Orange);
-}
+
 
 
 .how-its-made-button {
@@ -92,7 +88,7 @@ screen and (min-resolution: 2dppx) {
    border-radius: 100px;
    background: none;
 
-   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+   transition: var(--animation);
 }
 
 .how-its-made-button:hover,
@@ -107,12 +103,12 @@ screen and (min-resolution: 2dppx) {
    line-height: 1.17;
    letter-spacing: -0.03em;
    color: #ffffff;
-
+   padding: 5px 10px;
    display: flex;
    align-items: center;
    gap: 12px;
 
-   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+   transition: var(--animation);
 }
 
 .scroll-down-icon {
@@ -122,7 +118,7 @@ screen and (min-resolution: 2dppx) {
    background-color: #ffffff;
    border-radius: 50%;
 
-   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+   transition: var(--animation);
 }
 
 .scroll-down-button:hover,
@@ -216,7 +212,7 @@ screen and (min-resolution: 2dppx) {
    }
 }
 
-/* DESCTOP */
+/* DESKTOP */
 @media screen and (min-width: 1200px) {
    .hero-wraper {
       padding-top: 381px;

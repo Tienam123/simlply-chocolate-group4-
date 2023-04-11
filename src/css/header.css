@@ -54,6 +54,7 @@
 }
 .nav-menu-item {
    position: relative;
+   padding: 2px;
 }
 
 .nav-menu-link {
@@ -103,7 +104,7 @@
    width: 20px;
    height: 20px;
    stroke: #111111;
-   fill: #fff;
+   fill: #FAFAFA;
 }
 .social-mobile-menu {
 }
@@ -168,7 +169,7 @@
       top: 0;
    }
    .menu-container.js-menu-container {
-      position: absolute;
+      position: fixed;
       top: -200%;
       right: 0;
       color: #fff;
@@ -195,16 +196,16 @@
       width: 47px;
    }
    .nav-menu-item:nth-child(2) {
-      width: 105px;
+      width: 110px;
    }
    .nav-menu-item:nth-child(3) {
-      width: 92px;
+      width: 97px;
    }
    .nav-menu-item:nth-child(4) {
-      width: 72px;
+      width: 77px;
    }
    .nav-menu-item:nth-child(5) {
-      width: 124px;
+      width: 128px;
    }
    .nav-menu-link {
       width: 140px;
@@ -221,7 +222,7 @@
       height: 2px;
       left: 0;
       bottom: 0;
-      transform: translateX(-102%);
+      transform: translateX(-110%);
       transition: all 500ms linear;
    }
    .nav-menu-link:hover::after {
@@ -316,12 +317,22 @@
       flex: 1 1;
    }
    .nav-menu-item-desktop {
-      padding: 5px 0;
+      padding: 4px 5px;
       overflow: hidden;
       position: relative;
    }
    .nav-menu-link-desktop {
+      padding: 2px 2px;
+      transition: all var(--animation);
    }
+
+   .nav-menu-link-desktop:focus,
+   .nav-menu-link-desktop:hover {
+      color: var(--Orange);
+      
+   }
+
+
    .nav-link-line-desktop {
    }
 
@@ -398,6 +409,15 @@
    font-size: 14px;
    line-height: 17px;
 }
+.candy-order-active {
+   outline: 0;
+    outline-offset: 0;
+}
+.candy-order-active:focus .candy-order {
+   border: 3px solid var(--Orange);
+}
+
+
 .hero-item-input {
    border: 2px solid rgba(17, 17, 17, 0.05);
 }
@@ -491,11 +511,19 @@
 .hero-form-send {
    border-radius: 100px;
    background-color: #fd9222;
-   border: none;
+   border: 1px solid var(--Orange);
    color: #fff;
    display: inline-block;
    margin-top: 18px;
+   transition: all var(--animation);
 }
+
+.hero-form-send:focus,
+.hero-form-send:hover {
+   background-color: #fff;
+   color: var(--Orange);
+}
+
 
 @media screen and (max-width: 767px) {
    .backdrop {
