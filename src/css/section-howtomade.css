@@ -7,16 +7,11 @@
    .howtomade-img-wrap {
       position: relative;
    }
-   .howtomade-video-btn,
    .howtomade-icon-wrap-mobile {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      z-index: 11;
-   }
-   .howtomade-video-btn {
-   padding: 2px 2px;
    }
    .howtomade-icon-mobile {
       stroke: #fff;
@@ -70,18 +65,6 @@
 .howtomade-img {
    position: relative;
    border-radius: 15px;
-   z-index: 11;
-}
-.howtomade-video {
-   position: absolute;
-   top: 0;
-   left: 0;
-   border-radius: 15px;
-   border:2px solid #fd9222;
-   width: 100%;
-   max-width: 335px;
-   height: 100%;
-   z-index: 1;
 }
 .howtomade-desc-wrap {
    padding: 20px 14px;
@@ -120,24 +103,21 @@
 }
 /* !##################### 768px-1199px ########################### */
 @media screen and (min-width: 768px) {
-   .howtomade-video {
-      max-width: 614px;
-   }
    .howtomade-icon-wrap-mobile,
    .howtomade-icon-mobile {
       display: none;
    }
-   .howtomade-video-btn,
    .howtomade-icon-wrap {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      z-index: 11;
    }
    .howtomade-icon {
       stroke: #fff;
       fill: none;
+      width: 44px;
+      height: 44px;
    }
    .howtomade-desc-wrap {
       padding: 32px;
@@ -163,9 +143,6 @@
       padding-right: 26px;
    }
    .howtomade-img {
-      max-width: 600px;
-   }
-   .howtomade-video {
       max-width: 600px;
    }
 }
