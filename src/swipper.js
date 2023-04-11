@@ -6,6 +6,9 @@ new Swiper('.swiper-product', {
    grabCursor: true,
    simulateTouch: true,
    touchRatio: 2,
+   // mousewheel: {
+   //    sensitivity: 1,
+   // },
    mousewheel: {
       sensitivity: 1,
    },
