@@ -1,72 +1,127 @@
-.components {
-}
+
 .container {
 }
 .component-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--dark);
+
+    text-align: center;
 }
 .component-word {
+    color: var(--Orange);
+
 }
 .component-sub-text {
+    letter-spacing: -0.02em;
+    color: var(--dark);
+    margin-bottom: 32px;
+    text-align: center;
 }
+​
 .component-menu {
    
 }
 @media screen and (max-width:767px) {
-    .component-card {
+    .component-card-wrapper {
         margin: 0 auto;
     }
-    .component-card:not(:last-child) {
-        margin-bottom: 50px;
+    .component-card-wrapper:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .components {
+        padding-top: 72px;
+    }
+    .component-title{
+        margin-bottom: 24px;
+    }
+    .component-menu {
+        margin-top: 32px;
     }
 }
 @media screen and (min-width:768px) {
     .component-menu {
+        margin-top: 50px;
         display: flex;
         flex-wrap: wrap;
-        gap: 25px;
+        gap: 32px;
         justify-content: center;
+    }
+    .components {
+        padding-top: 100px;
+    }
+    .component-title{
+        margin-bottom: 28px;
     }
 }
 
 @media screen and (min-width:1200px) {
     .component-menu {
         flex-wrap: nowrap;
+        column-gap: 19px;
+        row-gap: 0;
     }
+    .components {
+        padding-top: 128px;
+    }
+  
 }
 
 
-.component-card {
+.component-card-wrapper {
+    position: relative;
     width: 270px;
     height: 270px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    /* padding: 3px; */
+}
+.component-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
     position: relative;
     transition: transform 900ms linear;
     transform-style: preserve-3d;
     cursor: pointer;   
+    pointer-events: none;
     transform: rotateY(180deg) scaleX(-1);
+   
 }
-.component-card:hover {
+
+
+.component-card-wrapper:hover .component-card {
     transform: rotateY(0deg);
 }
 
-.component-card:nth-child(1) {
-background-color: var(--Orange);
+.component-card-wrapper:nth-child(1) {
 }
-.component-card:nth-child(1) {
+.component-card-wrapper:nth-child(1) .component-card {
+    background-color: orange;
   color: var(--FooterMainText);
     }
 
-.component-card:nth-child(2) {
-    background-color: var(--FooterMainText);
+.component-card-wrapper:nth-child(2) .component-card {
+    background-color:var(--FooterMainText);
 }
-.component-card:nth-child(3) {
+.component-card-wrapper:nth-child(3) .component-card {
     background-color: var(--dark-violet);
+    color: var(--FooterMainText);
 }
 .component-card:nth-child(3) .component-card-item-title {
-    color: #fff;
+    color: var(--FooterMainText);
 }
 
-.component-card:nth-child(4)  {
+.component-card-wrapper:nth-child(4) .component-card {
     background-color: var(--FooterMainText);
 }
 .component-card-item {
@@ -75,21 +130,37 @@ background-color: var(--Orange);
     position: absolute;
     top: 0;
     left: 0;
-    overflow: hidden;
 }
 .item-front {
     padding: 28px 36px 28px 28px;   
-    border-radius: 15px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 .item-back {
     padding: 20px;
     background-color: var(--FooterMainText);
-    border-radius: 14px;
-    border-radius: 15px;
+border-radius: 13px;
     backface-visibility: hidden;
-    
-
+    border: 1px solid var(--FooterMainText);
+    overflow: hidden;
 }
+.item-back:hover {
+    overflow-y:scroll ;
+}
+.item-back::-webkit-scrollbar {
+    width: 12px;           /* ширина всей полосы прокрутки */
+  }
+  
+  .item-back::-webkit-scrollbar-track {
+    background: var(--FooterMainText);        /* цвет зоны отслеживания */
+    border-radius: 40px;
+}
+  
+  .item-back::-webkit-scrollbar-thumb {
+    background-color: gainsboro;    /* цвет бегунка */
+    border-radius: 20px;       /* округлось бегунка */
+    border: 4px solid var(--FooterMainText); /* отступ вокруг бегунка */
+  }
 .componnents-img {
 }
 .component-card-item-title {

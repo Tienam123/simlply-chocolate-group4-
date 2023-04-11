@@ -22,6 +22,9 @@
 .menu-toggle {
    background-color: transparent;
    border: none;
+   padding: 0;
+   position: relative;
+   right: -3px;
 }
 .js-open-menu {
 }
@@ -520,8 +523,7 @@
 
 .hero-form-send:focus,
 .hero-form-send:hover {
-   background-color: #fff;
-   color: var(--Orange);
+   color: var(--FooterSecondText);
 }
 
 

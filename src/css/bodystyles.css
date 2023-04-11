@@ -4,6 +4,7 @@
    width: 100%;
 }
 
+
 body {
    font-family: 'Montserrat';
    font-size: 14px;
@@ -63,8 +64,9 @@ section.products button:focus {
 
 .button-orange:hover,
 .button-orange:focus {
-   color: orange;
-   background-color: #fff;
+   color: var(--Orange);
+   background-color: #FCF1E0;
+   border-color: #FCF1E0;
    transform: translate(0, -5px);
    box-shadow: 2px 5px 4px orange;
 }
