@@ -98,6 +98,7 @@
 }
 
 
+.component-card-wrapper:hover .component-card,
 .component-card-wrapper:hover .component-card {
     transform: rotateY(0deg);
 }
