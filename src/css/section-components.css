@@ -77,7 +77,7 @@
     position: relative;
     width: 270px;
     height: 270px;
-    border-radius: 15px;
+    border-radius: 12px;
     position: relative;
     overflow: hidden;
     /* padding: 3px; */
@@ -93,7 +93,6 @@
     transition: transform 900ms linear;
     transform-style: preserve-3d;
     cursor: pointer;   
-    pointer-events: none;
     transform: rotateY(180deg) scaleX(-1);
    
 }
@@ -134,7 +133,6 @@
 .item-front {
     padding: 28px 36px 28px 28px;   
     border-radius: 20px;
-    overflow: hidden;
 }
 .item-back {
     padding: 20px;
@@ -142,7 +140,7 @@
 border-radius: 13px;
     backface-visibility: hidden;
     border: 1px solid var(--FooterMainText);
-    overflow: hidden;
+    overflow: scroll;
 }
 .item-back:hover {
     overflow-y:scroll ;
