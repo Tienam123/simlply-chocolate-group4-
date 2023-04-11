@@ -24,6 +24,7 @@
 
 .review-list {
     position: relative;
+    margin-bottom: 20px;
 }
 .review-items {
     padding-top: 40px;
@@ -80,15 +81,18 @@
 
 .review .swiper-pagination-bullets {
     --swiper-pagination-bullet-horizontal-gap: 6px;
-    --swiper-pagination-bottom: -20px;
+    --swiper-pagination-bottom: 0px;
 }
 
 .review .slider {
-    margin-bottom: 52px;
+    margin-bottom: 32px;
 }
 
 .review .swiper-pagination {
     position: relative;
+}
+.review .swiper-pagination-horizontal {
+    max-height: 14px;
 }
 
 .review-btn {
@@ -126,13 +130,13 @@
         padding-left: 16px;
         padding-right: 16px;
     }
-   
-    .review .swiper-pagination-bullets {
-    --swiper-pagination-bottom: -32px;
-    }
 
-    .review .slider {
-    margin-bottom: 82px;
+    .review-list {
+        margin-bottom: 32px;
+    }
+   
+     .review .slider {
+    margin-bottom: 50px;
     }
 }
 
