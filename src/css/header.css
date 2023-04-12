@@ -378,6 +378,13 @@
    stroke: black;
    width: 24px;
    height: 24px;
+   transition: all var(--animation);
+}
+
+.hero-close-btn:hover svg,
+.hero-close-btn:focus svg {
+   stroke:var(--Orange);
+   
 }
 
 .hero-form-title {
