@@ -45,13 +45,7 @@
     }
 }
 @media screen and (min-width:768px) {
-    .component-menu {
-        margin-top: 50px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 32px;
-        justify-content: center;
-    }
+  
     .components {
         padding-top: 100px;
     }
@@ -59,9 +53,77 @@
         margin-bottom: 28px;
     }
 }
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .component-card-wrapper {
+        position: relative;
+        width:323px;
+        height: 270px;
+        /* padding: 3px; */
+    }
+    .item-front {
+        padding: 28px; 
+        border-radius: 20px;
+    }
+    .componnents-img {
+        padding-left: 27px;
+        padding-right: 27px;
+    }
+    .component-card-item-title {
+        margin-top: 25px;
+    }
+    .item-back {
+        padding:28px;
+    }
+    .component-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+       
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .component-card-wrapper {
+        position: relative;
+        max-width:323px;
+        height: 270px;
+        /* padding: 3px; */
+    }
+    .item-front {
+        padding: 28px; 
+        border-radius: 20px;
+    }
+    .item-back {
+        padding:28px;
+    }
+    .componnents-img {
+        padding-left: 27px;
+        padding-right: 27px;
+    }
+    .component-card-item-title {
+        margin-top: 11%;
+    }
+}
+@media screen and (max-width:350px) {
+    .item-front {
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+.component-card-wrapper {
+    position: relative;
+    max-width:100%;
+    /* padding: 3px; */
+}
+}
+
 
 @media screen and (min-width:1200px) {
     .component-menu {
+        display: flex;
         flex-wrap: nowrap;
         column-gap: 19px;
         row-gap: 0;
@@ -69,14 +131,28 @@
     .components {
         padding-top: 128px;
     }
+    .component-card-wrapper {
+        width: 270px;
+        height: 270px;
+        /* padding: 3px; */
+    }
+    .item-front {
+        padding: 28px; 
+    }
+    .component-card-item-title {
+        margin-top: 36px;
+    }
+    .item-back {
+        padding:20px;
+    }
   
 }
 
 
+
+
 .component-card-wrapper {
     position: relative;
-    width: 270px;
-    height: 270px;
     border-radius: 12px;
     position: relative;
     overflow: hidden;
@@ -131,12 +207,11 @@
     top: 0;
     left: 0;
 }
-.item-front {
+/* .item-front {
     padding: 28px 36px 28px 28px;   
     border-radius: 20px;
-}
+} */
 .item-back {
-    padding: 20px;
     background-color: var(--FooterMainText);
 border-radius: 13px;
     backface-visibility: hidden;
@@ -164,9 +239,8 @@ border-radius: 13px;
 }
 .component-card-item-title {
     font-weight: 600;
-font-size: 18px;
+font-size: 14px;
 text-transform: uppercase;
-margin-top: 36px;
 }
 
 .component-card-title {
