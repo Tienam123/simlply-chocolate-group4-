@@ -404,7 +404,7 @@
    width: 100%;
    display: block;
 }
-.candy-order p {
+.candy-order span {
    text-align: center;
    border: 1px solid rgba(17, 17, 17, 0.1);
    border-radius: 100px;
@@ -616,7 +616,7 @@
       column-gap: 77px;
    }
 
-   .candy-order p {
+   .candy-order span {
       flex-basis: 0 0 100px;
       padding: 6px 16px;
    }
@@ -677,11 +677,13 @@
       margin-bottom: 40px;
    }
    .candy-order {
+      display: block;
       width: 160px;
       min-height: 196px;
       padding: 24px 20px 18px 20px;
    }
-   .candy-order p {
+
+   .candy-order span {
       padding: 8px 0;
       width: 96px;
       margin: 0 auto;
