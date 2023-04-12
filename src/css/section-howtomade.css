@@ -7,21 +7,11 @@
    .howtomade-img-wrap {
       position: relative;
    }
-   .howtomade-video-btn,
    .howtomade-icon-wrap-mobile {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      z-index: 11;
-   }
-   .howtomade-video-btn {
-      width: 35px;
-      height: 35px;
-      background-color: transparent;
-      border-radius: 50%;
-      outline: none;
-      border: none;
    }
    .howtomade-icon-mobile {
       stroke: #fff;
@@ -37,9 +27,7 @@
    .howtomade-section {
       padding-top: 100px;
    }
-   .howtomade-container {
-      max-width: 648px;
-   }
+   
    .howtomade-img {
       width: 100%;
    }
@@ -68,6 +56,7 @@
    display: flex;
    flex-wrap: wrap;
    gap: 20px;
+   justify-content: center;
 }
 .howtomade-vido-img-wrap,
 .howtomade-img-wrap {
@@ -76,21 +65,9 @@
 .howtomade-img {
    position: relative;
    border-radius: 15px;
-   z-index: 11;
 }
 .hidden {
    display: none;
-}
-.howtomade-video {
-   position: absolute;
-   top: 0;
-   left: 0;
-   border-radius: 15px;
-   border: 2px solid var(--Orange);
-   width: 100%;
-   max-width: 335px;
-   height: 100%;
-   z-index: 10;
 }
 .howtomade-desc-wrap {
    padding: 20px 14px;
@@ -129,30 +106,16 @@
 }
 /* !##################### 768px-1199px ########################### */
 @media screen and (min-width: 768px) {
-   .howtomade-video {
-      max-width: 614px;
-   }
    .howtomade-icon-wrap-mobile,
    .howtomade-icon-mobile {
       display: none;
    }
-   .howtomade-video-btn,
    .howtomade-icon-wrap {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      z-index: 11;
    }
-   .howtomade-video-btn {
-      width: 44px;
-      height: 44px;
-      background-color: transparent;
-      border-radius: 50%;
-      outline: none;
-      border: none;
-   }
-
    .howtomade-icon {
       stroke: var(--Main-white);
       fill: none;
@@ -167,6 +130,9 @@
       max-width: 350px;
       margin-bottom: 20px;
    }
+   .howtomade-img {
+   width: 614px;
+}
 }
 /* !##################### < 1200px ########################### */
 @media screen and (min-width: 1200px) {
@@ -181,9 +147,6 @@
       padding-right: 26px;
    }
    .howtomade-img {
-      max-width: 600px;
-   }
-   .howtomade-video {
       max-width: 600px;
    }
 }
