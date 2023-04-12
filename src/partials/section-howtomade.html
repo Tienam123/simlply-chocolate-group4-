@@ -1,39 +1,41 @@
 <section class="howtomade-section" id="howtomade">
    <div class="container howtomade-container">
       <h2 class="howtomade-title">
-         hOW IT’S<span class="howtomade-title-span">&nbsp;made?</span>
+         hOW IT&#39;S<span class="howtomade-title-span">&nbsp;made?</span>
       </h2>
       <div class="howtomade-wrapper">
-         <picture class="howtomade-img-wrap">
-            <source
-               srcset="
-                  ./img/howmade/video-wpapper-desktop-x1.jpg 1x,
-                  ./img/howmade/video-wpapper-desktop-x2.jpg 2x
-               "
-               media="(min-width: 1200px)"
-            />
-            <source
-               srcset="
-                  ./img/howmade/video-wpapper-tablet-x1.jpg 1x,
-                  ./img/howmade/video-wpapper-tablet-x2.jpg 2x
-               "
-               media="(min-width: 768px)"
-            />
-            <source
-               srcset="
-                  ./img/howmade/video-wpapper-mobile-x1.jpg 1x,
-                  ./img/howmade/video-wpapper-mobile-x2.jpg 2x
-               "
-               media="(max-width: 767px)"
-            />
-            <img
-               class="howtomade-img"
-               src="./img/howmade/video-wpapper-desktop-x1.jpg"
-               alt="making-chocolate-photo"
-               id="my-image"
-               width="600"
-               height="400"
-            />
+         <div class="howtomade-vido-img-wrap">
+            <picture class="howtomade-img-wrap">
+               <source
+                  srcset="
+                     ./img/howmade/video-wpapper-desktop-x1.jpg 1x,
+                     ./img/howmade/video-wpapper-desktop-x2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+               />
+               <source
+                  srcset="
+                     ./img/howmade/video-wpapper-tablet-x1.jpg 1x,
+                     ./img/howmade/video-wpapper-tablet-x2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+               />
+               <source
+                  srcset="
+                     ./img/howmade/video-wpapper-mobile-x1.jpg 1x,
+                     ./img/howmade/video-wpapper-mobile-x2.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+               />
+               <img
+                  class="howtomade-img"
+                  src="./img/howmade/video-wpapper-desktop-x1.jpg"
+                  alt="making-chocolate-photo"
+                  id="my-image"
+                  width="600"
+                  height="400"
+               />
+            </picture>
             <button class="howtomade-video-btn" type="button" id="button-id">
                <svg class="howtomade-icon-wrap" width="44" height="44">
                   <use
@@ -47,8 +49,9 @@
                      class="howtomade-icon-mobile"
                   ></use>
                </svg>
-           </button>
-         </picture>
+            </button>
+            <div id="iframe-id" class="howtomade-video"></div>
+         </div>
          <div class="howtomade-desc-wrap">
             <h3 class="howtomade-subtitle">
                Try our chocolates today and discover the perfect balance of
