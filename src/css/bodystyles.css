@@ -4,6 +4,9 @@
    width: 100%;
 }
 
+html {
+   scroll-behavior: smooth; /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */ 
+ }
 
 body {
    font-family: 'Montserrat';
