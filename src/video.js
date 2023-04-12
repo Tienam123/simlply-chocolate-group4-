@@ -1,5 +1,4 @@
 var player;
-
 function onYouTubeIframeAPIReady() {
    player = new YT.Player('iframe-id', {
       height: '400',
@@ -7,7 +6,6 @@ function onYouTubeIframeAPIReady() {
       videoId: '41UbWmXKWkc',
    });
 }
-
 document.getElementById('button-id').addEventListener('click', function () {
    document.getElementById('my-image').style.zIndex = 1;
    document.getElementById('iframe-id').style.zIndex = 11;
