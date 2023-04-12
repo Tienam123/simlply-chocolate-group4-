@@ -3,10 +3,10 @@
 
 # Team members:
 - [@Владислав Гончар](https://github.com/Tienam123) - Team-lead, "Header" section.
+- [@Андрій Навроцький](https://github.com/NavrA82) -  Scrum-master, "How to made it" section.
 - [@Юлій Кінаш](https://github.com/yulii0) - Developer, "Hero" section.
 - [@Марина Лисак](https://github.com/MarynaLysak) - Developer, "Advantages" section.
-- [@Вікторія Нерода](https://github.com/ViktoriiaNeroda) - Scrum-master, "Components" section.
-- [@Андрій Навроцький](https://github.com/NavrA82) - Developer, "How to made it" section.
+- [@Вікторія Нерода](https://github.com/ViktoriiaNeroda) - Develouper, "Components" section.
 - [@Анастасія Нікітіна](https://github.com/NikNas1405) - Developer, "Products" section.
 - [@Тетяна Москалюк](https://github.com/TanyaMosk) - Developer, "Sellers" section.
 - [@Оксана Шипик](https://github.com/Kipishoks) - Developer, "Rewiews" section.
