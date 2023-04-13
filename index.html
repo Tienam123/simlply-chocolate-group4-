@@ -20,7 +20,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
    />
   <script type="module" crossorigin src="/simlply-chocolate-group4-/assets/index-ac600992.js"></script>
-  <link rel="stylesheet" href="/simlply-chocolate-group4-/assets/index-cef783a8.css">
+  <link rel="stylesheet" href="/simlply-chocolate-group4-/assets/index-0024b5be.css">
 </head>
 
    <body>
@@ -408,12 +408,12 @@
                   class="howtomade-img"
                   src="/simlply-chocolate-group4-/assets/video-wpapper-desktop-x1-0f0e7ccc.jpg"
                   alt="making-chocolate-photo"
-                  id="my-image"
+                  id="howtomade-image"
                   width="600"
                   height="400"
                />
             </picture>
-            <button class="howtomade-video-btn" type="button" id="button-id">
+            <button class="howtomade-video-btn" type="button" id="howtomade-video-button-id">
                <svg class="howtomade-icon-wrap" width="44" height="44">
                   <use
                      href="/simlply-chocolate-group4-/assets/play-f1032c59.svg#play"
@@ -427,7 +427,36 @@
                   ></use>
                </svg>
             </button>
-            <div id="iframe-id" class="howtomade-video"></div>
+            <video
+               id="howtomade-video-id"
+               class="howtomade-video video-js vjs-default-skin vjs-16-9"
+               controls
+               preload="auto"
+               width="600"
+               height="400"
+               data-setup='{"fluid": true}'
+            >
+               <source
+                  src="/simlply-chocolate-group4-/assets/video-of-making-handmade-chocolate-480p-1739cb9b.mp4"
+                  type="video/mp4"
+                  media="(max-width: 480px)"
+               />
+               <source
+                  src="./video/video-of-making-handmade-chocolate-720p.mp4"
+                  type="video/mp4"
+                  media="(max-width: 768px)"
+               />
+               <source
+                  src="/simlply-chocolate-group4-/assets/video-of-making-handmade-chocolate-1080p-45925290.mp4"
+                  type="video/mp4"
+                  media="(max-width: 1024px)"
+               />
+               <source src="/simlply-chocolate-group4-/assets/video-of-making-handmade-chocolate-1080p-45925290.mp4" type="video/mp4" />
+               <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider
+                  upgrading to a web browser that supports HTML5 video
+               </p>
+            </video>
          </div>
          <div class="howtomade-desc-wrap">
             <h3 class="howtomade-subtitle">
@@ -470,6 +499,7 @@
       </div>
    </div>
 </section>
+
          <!-- ================= How to made it Section ================ -->
 
          <!-- =============== Products Section ================ -->
@@ -1097,7 +1127,6 @@
       
       
       
-      <script src="https://www.youtube.com/iframe_api"></script>
       <script src="./video.js"></script>
          
       <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
