@@ -91,6 +91,7 @@
    max-width: 335px;
    height: 100%;
    z-index: 10;
+   background-color: black;
 }
 .howtomade-desc-wrap {
    padding: 20px 14px;
