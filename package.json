@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/simlply-chocolate-group4-/",
+    "build": "vite build --base=/html-css_84-Tienam123/",
     "preview": "vite preview"
   },
   "devDependencies": {
