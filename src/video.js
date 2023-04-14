@@ -1,7 +1,7 @@
 const image = document.getElementById('howtomade-image');
 const video = document.getElementById('howtomade-video-id');
 const playButton = document.getElementById('howtomade-video-button-id');
-let savedTime = 0; // зберігатиме час зупинки відео
+let savedTime = 0;
 
 playButton.addEventListener('click', function () {
    video.play();
@@ -16,36 +16,29 @@ video.addEventListener('ended', function () {
    video.style.zIndex = 0;
 });
 
-// доданий обробник події для зупинки відео після кліку
 video.addEventListener('click', function () {
    if (video.paused) {
       video.play();
    } else {
-      savedTime = video.currentTime; // зберігає час зупинки
+      savedTime = video.currentTime;
       video.pause();
    }
 });
 
-// доданий обробник події для продовження відтворення з місця зупинки
 video.addEventListener('play', function () {
-   if (savedTime) {
+   if (video.currentTime === 0 && savedTime) {
       video.currentTime = savedTime;
-      savedTime = 0; // очищує збережений час
-   }
-});
-// Додавання обробника події для зупинки відео при кліку на нього
-video.addEventListener('click', function () {
-   if (!video.paused) {
-      video.pause();
-      playButton.classList.add('hidden');
+      savedTime = 0;
    }
 });
 
-// Додавання обробника події для продовження відтворення відео з місця зупинки
 video.addEventListener('click', function () {
-   if (video.paused && savedTime) {
-      video.currentTime = savedTime;
+   if (video.paused && video.currentTime !== video.duration) {
+      savedTime = video.currentTime;
       video.play();
       playButton.classList.remove('hidden');
+   } else if (!video.paused) {
+      video.pause();
+      playButton.classList.add('hidden');
    }
 });
